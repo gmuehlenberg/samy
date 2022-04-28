@@ -1,3 +1,4 @@
+import 'package:bloc_mvu_app/logging/logging.dart';
 import 'package:bloc_mvu_app/mvu/update.dart';
 
 /// A message than can be routed anywhere
@@ -20,10 +21,7 @@ void dispatch(final Message message) {
       return;
     }
 
-    throw Exception(
-      'An Update must be registered for every subtype of UpdateMessage. '
-      'For ${message.runtimeType} there is none!',
-    );
+    logger.e('An Update must be registered for every subtype of UpdateMessage. '
+      'For ${message.runtimeType} there is none!',);
   }
-  // TODO(tbd): log error.
 }
