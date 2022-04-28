@@ -1,26 +1,21 @@
-class NavigationModel {
-  NavigationModel({required this.currentPage, required this.activeModal});
+import 'package:flutter/material.dart' hide Page;
 
-  final Page currentPage;
-  final Modal activeModal;
+class NavigationModel {
+  NavigationModel(this.page);
+
+  final Page page;
 
   NavigationModel copyWith({
     Page? page,
-    Modal? modal,
   }) =>
-      NavigationModel(
-        currentPage: page ?? currentPage,
-        activeModal: modal ?? activeModal,
-      );
+      NavigationModel(page ?? this.page);
 }
 
-final NavigationModel initialNavigationModel = NavigationModel(currentPage: Page.home, activeModal: Modal.none);
+final NavigationModel initialNavigationModel = NavigationModel(Page.counter);
+
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
 enum Page {
-  home,
-}
-
-enum Modal {
-  none,
-  menu,
+  counter,
 }

@@ -8,8 +8,11 @@ class ConfigUpdate extends Update<ConfigMessage, ConfigModel> {
   ConfigUpdate(ConfigModel initialModel) : super(initialModel);
 
   // ignore: avoid_unused_constructor_parameters
-  factory ConfigUpdate.of(BuildContext context) => ConfigUpdate(ConfigModel.createUsingSystemEnvironment());
+  factory ConfigUpdate.of(BuildContext context) =>
+      ConfigUpdate(ConfigModel.createUsingSystemEnvironment());
 
   @override
-  Option<ConfigModel> processMessage(ConfigMessage message, ConfigModel model) => const None();
+  Option<ConfigModel> processMessage(
+          ConfigMessage message, ConfigModel model) =>
+      const None();
 }

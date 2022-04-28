@@ -1,5 +1,6 @@
 import 'package:bloc_mvu_app/config/config_update.dart';
 import 'package:bloc_mvu_app/counter/counter_update.dart';
+import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/navigation/navigation_view.dart';
 import 'package:flutter/material.dart';
@@ -16,9 +17,10 @@ class BlocMvuTestApp extends StatelessWidget {
           BlocProvider(create: ConfigUpdate.of, lazy: false),
           BlocProvider(create: CounterUpdate.of),
         ],
-        child: const MaterialApp(
+        child: MaterialApp(
+          navigatorKey: navigatorKey,
           title: 'BLoC+MVU Test App',
-          home: NavigationView(),
+          home: const NavigationView(),
         ),
       );
 }

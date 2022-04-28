@@ -21,7 +21,9 @@ void dispatch(final Message message) {
       return;
     }
 
-    logger.e('An Update must be registered for every subtype of UpdateMessage. '
-      'For ${message.runtimeType} there is none!',);
+    logger.e(
+      'An Update must be registered for every subtype of UpdateMessage. '
+      'For ${message.runtimeType} there is none!',
+    );
   }
 }

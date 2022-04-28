@@ -25,5 +25,4 @@ class CounterView extends View<CounterMessage, CounterModel, CounterUpdate> {
           ),
         ],
       );
-
 }

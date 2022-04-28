@@ -6,7 +6,8 @@ void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   group('end-to-end test', () {
-    testWidgets('tap on increment button, verify counter', (WidgetTester tester) async {
+    testWidgets('tap on increment button, verify counter',
+        (WidgetTester tester) async {
       // start app and wait for new frame.
       app.main();
       await tester.pumpAndSettle();

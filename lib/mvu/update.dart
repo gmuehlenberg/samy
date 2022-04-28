@@ -37,12 +37,14 @@ abstract class Update<MSG extends UpdateMessage, MDL> extends Bloc<MSG, MDL> {
 
 // impure code for the framework only, not accessible from outside this file
 final Map<Type, Update> _updateByType = {};
-final UnmodifiableMapView<Type, Update> updateByType = UnmodifiableMapView(_updateByType);
+final UnmodifiableMapView<Type, Update> updateByType =
+    UnmodifiableMapView(_updateByType);
 
 void _registerUpdate<MSG extends UpdateMessage>(Update update) {
   if (_updateByType.containsKey(update.runtimeType)) {
     // This will be checked only once at application start and acts as a developer hint
-    throw Exception('A subtype of Update like ${update.runtimeType} can only be instantiated once!');
+    throw Exception(
+        'A subtype of Update like ${update.runtimeType} can only be instantiated once!');
   }
   _updateByType[update.runtimeType] = update;
 }
