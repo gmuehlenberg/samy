@@ -10,8 +10,7 @@ class NavigationUpdate extends Update<NavigationMessage, NavigationModel> {
   NavigationUpdate(NavigationModel initialModel) : super(initialModel);
 
   // ignore: avoid_unused_constructor_parameters
-  factory NavigationUpdate.of(BuildContext context) =>
-      NavigationUpdate(initialNavigationModel);
+  factory NavigationUpdate.of(BuildContext context) => NavigationUpdate(initialNavigationModel);
 
   @override
   Option<NavigationModel> processMessage(

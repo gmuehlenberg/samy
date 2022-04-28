@@ -7,14 +7,13 @@ import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/pages/menu/menu_view.dart';
 import 'package:flutter/material.dart' hide Page;
 
-class NavigationView
-    extends View<NavigationMessage, NavigationModel, NavigationUpdate> {
+class NavigationView extends View<NavigationMessage, NavigationModel, NavigationUpdate> {
   const NavigationView({Key? key}) : super(key: key);
 
   @override
   Widget buildView(NavigationModel model) => Scaffold(
-    key: scaffoldKey,
-    appBar: AppBar(
+        key: scaffoldKey,
+        appBar: AppBar(
           title: const Text(
             'MVU+BLoC Test app',
           ),
