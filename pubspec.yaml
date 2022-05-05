@@ -1,0 +1,37 @@
+name: bloc_mvu_app
+description: App to kickstart with BLoC & MVU in flutter
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+
+dependencies:
+  bloc: ^8.0.1
+  cupertino_icons: ^1.0.2
+  dartz: ^0.10.1
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.0.0
+  logger: ^1.1.0
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  msix: ^2.8.1
+  very_good_analysis: ^2.4.0
+
+flutter:
+  uses-material-design: true
+
+msix_config:
+  display_name: BLoC+MVU Kickstarter App
+  publisher_display_name: com.gmuehlenberg
+  identity_name: com.gmuehlenberg
+  msix_version: 1.0.0.0
+  capabilities: "internetClient"
