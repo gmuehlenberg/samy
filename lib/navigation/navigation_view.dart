@@ -1,4 +1,4 @@
-import 'package:bloc_mvu_app/counter/counter_view.dart';
+import 'package:bloc_mvu_app/login/login_view.dart';
 import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
@@ -15,8 +15,9 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
         key: scaffoldKey,
         appBar: AppBar(
           title: const Text(
-            'MVU+BLoC Test app',
+            'Login App',
           ),
+          backgroundColor: Colors.greenAccent,
           actions: [
             IconButton(
               icon: const Icon(Icons.table_rows),
@@ -36,7 +37,7 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
 
 Widget widgetFor(Page page) {
   switch (page) {
-    case Page.counter:
-      return const CounterView();
+    case Page.login:
+      return const LoginView();
   }
 }
