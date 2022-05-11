@@ -37,8 +37,6 @@ class ConfigModel {
       return configUpdate.model();
     }
 
-    throw Exception(
-      'This app can not work without an instance of ConfigUpdate!',
-    );
+    throw Exception('This app can not work without an instance of ConfigUpdate!');
   }
 }

@@ -12,10 +12,7 @@ class CounterUpdate extends Update<CounterMessage, CounterModel> {
   factory CounterUpdate.of(BuildContext context) => CounterUpdate(initialCounterModel);
 
   @override
-  Option<CounterModel> processMessage(
-    CounterMessage message,
-    CounterModel model,
-  ) {
+  Option<CounterModel> processMessage(CounterMessage message, CounterModel model) {
     if (message is Increment) {
       return Some(model.copyWith(count: model.count + 1));
     }
