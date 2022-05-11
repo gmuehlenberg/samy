@@ -1,9 +1,7 @@
-import 'package:flutter/animation.dart';
-
 class LoginModel {
   LoginModel({required this.isLoggedIn});
 
-  bool isLoggedIn;
+  final bool isLoggedIn;
 
   LoginModel copyWith({
     bool? isLoggedIn,

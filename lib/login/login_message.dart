@@ -8,9 +8,3 @@ abstract class LoginMessage extends UpdateMessage {
 class LogIn extends LoginMessage {}
 
 class LogOut extends LoginMessage {}
-
-class SetTo extends LoginMessage {
-  SetTo({required this.value});
-
-  final int value;
-}

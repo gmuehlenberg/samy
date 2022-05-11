@@ -12,22 +12,18 @@ class LoginView extends View<LoginMessage, LoginModel, LoginUpdate> {
   Widget buildView(LoginModel model) => Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          if (model.isLoggedIn == true) ...[
-            Text('User ist eingeloggt')
-          ] else if (model.isLoggedIn == false) ...[
-            Text('User ist ausgeloggt')
-          ], // Text('')
+          Text('User ist ${model.isLoggedIn ? 'ein' : 'aus'}geloggt'),
           FloatingActionButton(
             onPressed: () => dispatch(LogIn()),
             tooltip: 'User einloggen',
-            child: Icon(Icons.login_rounded),
             backgroundColor: Colors.purpleAccent,
+            child: const Icon(Icons.login_rounded),
           ),
           FloatingActionButton(
             onPressed: () => dispatch(LogOut()),
             tooltip: 'User ausloggen',
-            child: Icon(Icons.logout_rounded),
             backgroundColor: Colors.purpleAccent,
+            child: const Icon(Icons.logout_rounded),
           ),
         ],
       );

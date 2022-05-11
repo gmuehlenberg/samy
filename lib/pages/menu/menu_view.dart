@@ -9,7 +9,9 @@ Widget _button(String text, Page target) => ElevatedButton(
         dispatch(NavigateUp());
         dispatch(NavigateTo(target));
       },
-      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.black54)),
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(Colors.black54),
+      ),
       child: Tooltip(message: text, child: Text(text)),
     );
 

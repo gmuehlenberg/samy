@@ -1,4 +1,3 @@
-import 'package:bloc_mvu_app/counter/counter_view.dart';
 import 'package:bloc_mvu_app/login/login_view.dart';
 import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/view.dart';
