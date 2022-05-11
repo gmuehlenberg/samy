@@ -22,11 +22,11 @@ class MenuView extends ViewWithoutModel {
         children: [
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Colors.greenAccent,
             ),
             child: Text('Menu'),
           ),
-          _button('Counter', Page.counter),
+          _button('Login', Page.login),
         ],
       );
 }
