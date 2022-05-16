@@ -1,4 +1,5 @@
 import 'package:bloc_mvu_app/login/login_view.dart';
+import 'package:bloc_mvu_app/user/user_view.dart';
 import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
@@ -39,5 +40,7 @@ Widget widgetFor(Page page) {
   switch (page) {
     case Page.login:
       return const LoginView();
+    case Page.user:
+      return const UserView();
   }
 }

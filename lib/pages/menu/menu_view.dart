@@ -29,6 +29,7 @@ class MenuView extends ViewWithoutModel {
             child: Text('Menu'),
           ),
           _button('Login', Page.login),
+          _button('User', Page.user)
         ],
       );
 }
