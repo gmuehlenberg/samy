@@ -5,6 +5,4 @@ abstract class RegistrationMessage extends UpdateMessage {
   RegistrationMessage() : super(routeTo: RegistrationUpdate);
 }
 
-class Registration extends RegistrationMessage {}
-
-class LogOut extends RegistrationMessage {}
+class changePasswordVisibilityMsg extends RegistrationMessage {}

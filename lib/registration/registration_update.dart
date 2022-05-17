@@ -12,11 +12,8 @@ class RegistrationUpdate extends Update<RegistrationMessage, RegistrationModel> 
 
   @override
   Option<RegistrationModel> processMessage(RegistrationMessage message, RegistrationModel model) {
-    if (message is Registration) {
-      return Some(model.copyWith(isLoggedIn: true));
-    }
-    if (message is LogOut) {
-      return Some(model.copyWith(isLoggedIn: false));
+    if (message is changePasswordVisibilityMsg) {
+      return Some(model.copyWith(obscurePassword: !model.obscurePassword));
     }
     return const None();
   }
