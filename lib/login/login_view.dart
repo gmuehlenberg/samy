@@ -10,7 +10,27 @@ class LoginView extends View<LoginMessage, LoginModel, LoginUpdate> {
 
   @override
   Widget buildView(LoginModel model) => Scaffold(
-        body: Form(
+          body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Text('User ist ${model.isLoggedIn ? 'ein' : 'aus'}geloggt'),
+          FloatingActionButton(
+            onPressed: () => dispatch(LogIn()),
+            tooltip: 'User einloggen',
+            backgroundColor: Colors.purpleAccent,
+            child: const Icon(Icons.login_rounded),
+          ),
+          FloatingActionButton(
+            onPressed: () => dispatch(LogOut()),
+            tooltip: 'User ausloggen',
+            backgroundColor: Colors.purpleAccent,
+            child: const Icon(Icons.logout_rounded),
+          ),
+        ],
+      ));
+}
+
+/*Form(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -95,28 +115,6 @@ class LoginView extends View<LoginMessage, LoginModel, LoginUpdate> {
                       )))
             ],
           ),
-        ));
-}
+        )); */
 
-
-
-
-      /*Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          Text('User ist ${model.isLoggedIn ? 'ein' : 'aus'}geloggt'),
-          FloatingActionButton(
-            onPressed: () => dispatch(LogIn()),
-            tooltip: 'User einloggen',
-            backgroundColor: Colors.purpleAccent,
-            child: const Icon(Icons.login_rounded),
-          ),
-          FloatingActionButton(
-            onPressed: () => dispatch(LogOut()),
-            tooltip: 'User ausloggen',
-            backgroundColor: Colors.purpleAccent,
-            child: const Icon(Icons.logout_rounded),
-          ),
-        ],
-      );*/
-}
+/**/

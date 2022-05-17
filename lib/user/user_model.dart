@@ -1,11 +1,12 @@
 class UserModel {
-  UserModel({required this.surname,
-             required this.lastname,
-             required this.street,
-             required this.city,
-             required this.mail,
-             required this.password,
-             required this.postCode,
+  UserModel({
+    required this.surname,
+    required this.lastname,
+    required this.street,
+    required this.city,
+    required this.mail,
+    required this.password,
+    required this.postCode,
   });
 
   final String surname, lastname, street, postCode, city, mail, password;
@@ -28,9 +29,14 @@ class UserModel {
         mail: mail ?? this.mail,
         password: password ?? this.password,
         postCode: postCode ?? this.postCode,
-        
-        
       );
 }
 
-final UserModel initialUserModel = UserModel(surname: 'Olive', lastname: 'Tree', street: "Karl-Liebknecht-Straße 38", city: 'Leipzig', postCode: '04107', mail: 'döner@olivetree.de', password: 'dönermachtschöner123' );
+final UserModel initialUserModel = UserModel(
+    surname: 'Olive',
+    lastname: 'Tree',
+    street: "Karl-Liebknecht-Straße 38",
+    city: 'Leipzig',
+    postCode: '04107',
+    mail: 'döner@olivetree.de',
+    password: 'dönermachtschöner123');

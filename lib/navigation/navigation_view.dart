@@ -8,6 +8,8 @@ import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/pages/menu/menu_view.dart';
 import 'package:flutter/material.dart' hide Page;
 
+import '../registration/registration_view.dart';
+
 class NavigationView extends View<NavigationMessage, NavigationModel, NavigationUpdate> {
   const NavigationView({Key? key}) : super(key: key);
 
@@ -42,5 +44,7 @@ Widget widgetFor(Page page) {
       return const LoginView();
     case Page.user:
       return const UserView();
+    case Page.registration:
+      return const RegistrationView();
   }
 }
