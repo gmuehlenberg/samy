@@ -8,9 +8,6 @@ import 'package:flutter/material.dart';
 class RegistrationView extends View<RegistrationMessage, RegistrationModel, RegistrationUpdate> {
   const RegistrationView({Key? key}) : super(key: key);
 
-  final bool _obscureText = true;
-  final bool _isChecked = false;
-
   @override
   Widget buildView(RegistrationModel model) => Scaffold(
         body: SafeArea(
@@ -78,9 +75,9 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                               suffixIcon: IconButton(
                                 icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
                                 onPressed: () {
-                                  dispatch(changePasswordVisibilityMsg());
+                                  dispatch(ChangePasswordVisibility());
                                 },
-                              )),
+                              ),),
                         ),
                         SizedBox(
                           height: 10,

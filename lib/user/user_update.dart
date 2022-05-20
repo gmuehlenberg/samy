@@ -20,7 +20,7 @@ class UserUpdate extends Update<UserMessage, UserModel> {
           city: 'Leipzig',
           postCode: '04107',
           mail: 'döner@olivetree.de',
-          password: 'dönermachtschöner123'));
+          password: 'dönermachtschöner123',),);
     }
     /*if (message is ChangeUser) {
       return Some(model.copyWith(isLoggedIn: false));

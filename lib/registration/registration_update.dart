@@ -12,7 +12,7 @@ class RegistrationUpdate extends Update<RegistrationMessage, RegistrationModel> 
 
   @override
   Option<RegistrationModel> processMessage(RegistrationMessage message, RegistrationModel model) {
-    if (message is changePasswordVisibilityMsg) {
+    if (message is ChangePasswordVisibility) {
       return Some(model.copyWith(obscurePassword: !model.obscurePassword));
     }
     return const None();

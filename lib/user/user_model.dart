@@ -39,4 +39,4 @@ final UserModel initialUserModel = UserModel(
     city: 'Leipzig',
     postCode: '04107',
     mail: 'döner@olivetree.de',
-    password: 'dönermachtschöner123');
+    password: 'dönermachtschöner123',);

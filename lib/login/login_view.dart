@@ -27,7 +27,7 @@ class LoginView extends View<LoginMessage, LoginModel, LoginUpdate> {
             child: const Icon(Icons.logout_rounded),
           ),
         ],
-      ));
+      ),);
 }
 
 /*Form(
