@@ -1,6 +1,6 @@
+import 'package:bloc_mvu_app/mvu/update.dart';
 import 'package:bloc_mvu_app/registration/registration_message.dart';
 import 'package:bloc_mvu_app/registration/registration_model.dart';
-import 'package:bloc_mvu_app/mvu/update.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 

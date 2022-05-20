@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:bloc_mvu_app/mvu/update.dart';
 
 // Define a custom Form widget.
 
@@ -8,14 +7,14 @@ class SignUpModel {
 
   final bool obscurePassword;
 
-  TextEditingController surnameController = new TextEditingController();
-  TextEditingController lastnameController = new TextEditingController();
-  TextEditingController streetController = new TextEditingController();
-  TextEditingController streetNumberController = new TextEditingController();
-  TextEditingController postCodeController = new TextEditingController();
-  TextEditingController cityController = new TextEditingController();
-  TextEditingController mailController = new TextEditingController();
-  TextEditingController passwordController = new TextEditingController();
+  TextEditingController surnameController = TextEditingController();
+  TextEditingController lastnameController = TextEditingController();
+  TextEditingController streetController = TextEditingController();
+  TextEditingController streetNumberController = TextEditingController();
+  TextEditingController postCodeController = TextEditingController();
+  TextEditingController cityController = TextEditingController();
+  TextEditingController mailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   SignUpModel copyWith({
     bool? obscurePassword,

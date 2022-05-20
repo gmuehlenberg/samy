@@ -1,8 +1,8 @@
+import 'package:bloc_mvu_app/mvu/messaging.dart';
+import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/registration/registration_message.dart';
 import 'package:bloc_mvu_app/registration/registration_model.dart';
 import 'package:bloc_mvu_app/registration/registration_update.dart';
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationView extends View<RegistrationMessage, RegistrationModel, RegistrationUpdate> {
@@ -12,7 +12,7 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
   Widget buildView(RegistrationModel model) => Scaffold(
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -27,31 +27,31 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                           width: 85,
                           height: 85,
                           color: Colors.grey[200],
-                          child: new Image.asset('assets/samy_small.png'),
                           alignment: Alignment.center,
+                          child: Image.asset('assets/samy_small.png'),
                           /*decoration: BoxDecoration(
                             color: Colors.blue[900],
                             borderRadius: BorderRadius.circular(30)),*/
                         ),
-                        Icon(
+                        const Icon(
                           Icons.settings,
                           color: Colors.grey,
                           size: 40,
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
-                      "Welcome to SAMY",
+                      'Welcome to SAMY',
                       style: TextStyle(fontSize: 25, color: Colors.blue[900]),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
-                      "Log in to find the perfect place for your youngster",
+                      'Log in to find the perfect place for your youngster',
                       style: TextStyle(color: Colors.grey[700], fontSize: 18),
                     ),
                   ],
@@ -61,17 +61,17 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        TextField(
-                          decoration: InputDecoration(labelText: "Email", border: OutlineInputBorder()),
+                        const TextField(
+                          decoration: InputDecoration(labelText: 'Email', border: OutlineInputBorder()),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         TextField(
                           obscureText: model.obscurePassword,
                           decoration: InputDecoration(
-                            labelText: "Password",
-                            border: OutlineInputBorder(),
+                            labelText: 'Password',
+                            border: const OutlineInputBorder(),
                             suffixIcon: IconButton(
                               icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
                               onPressed: () {
@@ -80,7 +80,7 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
@@ -89,10 +89,11 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                             Row(
                               children: <Widget>[
                                 RaisedButton(
-                                  child: Text('Register now', style: TextStyle(color: Colors.white, fontSize: 18)),
-                                  padding: EdgeInsets.all(15),
+                                  padding: const EdgeInsets.all(15),
                                   onPressed: () {},
                                   color: Colors.blue[900],
+                                  child:
+                                      const Text('Register now', style: TextStyle(color: Colors.white, fontSize: 18)),
                                 ),
                               ],
                             ),
@@ -103,7 +104,7 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                             ),
                             GestureDetector(
                               onTap: () {},
-                              child: Text("FORGOT PASSWORD?"),
+                              child: const Text('FORGOT PASSWORD?'),
                             )
                           ],
                         )
@@ -114,13 +115,13 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                 SizedBox(
                   width: double.infinity,
                   child: RaisedButton(
-                    child: Text(
-                      "Login",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                    padding: EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(15),
                     color: Colors.blue[900],
                     onPressed: () {},
+                    child: const Text(
+                      'Login',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
                   ),
                 )
               ],

@@ -12,12 +12,12 @@ class UserView extends View<UserMessage, UserModel, UserUpdate> {
   Widget buildView(UserModel model) => Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Text('Nutzeransicht'),
-          Text('Name: ' + model.surname + ' ' + model.lastname),
-          Text('Straße: ' + model.street),
-          Text('PLZ: ' + model.postCode),
-          Text('Stadt: ' + model.city),
-          Text('Mail-Adresse: ' + model.mail),
+          const Text('Nutzeransicht'),
+          Text('Name: ${model.surname} ${model.lastname}'),
+          Text('Straße: ${model.street}'),
+          Text('PLZ: ${model.postCode}'),
+          Text('Stadt: ${model.city}'),
+          Text('Mail-Adresse: ${model.mail}'),
           FloatingActionButton(
             onPressed: () => dispatch(CreateUser()),
             tooltip: 'User einloggen',

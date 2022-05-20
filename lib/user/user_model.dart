@@ -35,7 +35,7 @@ class UserModel {
 final UserModel initialUserModel = UserModel(
   surname: 'Olive',
   lastname: 'Tree',
-  street: "Karl-Liebknecht-Straße 38",
+  street: 'Karl-Liebknecht-Straße 38',
   city: 'Leipzig',
   postCode: '04107',
   mail: 'döner@olivetree.de',
