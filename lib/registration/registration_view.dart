@@ -70,14 +70,15 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                         TextField(
                           obscureText: model.obscurePassword,
                           decoration: InputDecoration(
-                              labelText: "Password",
-                              border: OutlineInputBorder(),
-                              suffixIcon: IconButton(
-                                icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
-                                onPressed: () {
-                                  dispatch(ChangePasswordVisibility());
-                                },
-                              ),),
+                            labelText: "Password",
+                            border: OutlineInputBorder(),
+                            suffixIcon: IconButton(
+                              icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
+                              onPressed: () {
+                                dispatch(ChangePasswordVisibility());
+                              },
+                            ),
+                          ),
                         ),
                         SizedBox(
                           height: 10,

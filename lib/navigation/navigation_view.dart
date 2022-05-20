@@ -1,5 +1,6 @@
 import 'package:bloc_mvu_app/login/login_view.dart';
 import 'package:bloc_mvu_app/registration/registration_view.dart';
+import 'package:bloc_mvu_app/sign_up/sign_up_view.dart';
 import 'package:bloc_mvu_app/user/user_view.dart';
 import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/view.dart';
@@ -8,7 +9,6 @@ import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/pages/menu/menu_view.dart';
 import 'package:flutter/material.dart' hide Page;
-
 
 class NavigationView extends View<NavigationMessage, NavigationModel, NavigationUpdate> {
   const NavigationView({Key? key}) : super(key: key);
@@ -46,5 +46,7 @@ Widget widgetFor(Page page) {
       return const UserView();
     case Page.registration:
       return const RegistrationView();
+    case Page.signUp:
+      return const SignUpView();
   }
 }

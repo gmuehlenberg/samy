@@ -31,6 +31,7 @@ class MenuView extends ViewWithoutModel {
           _button('Login', Page.login),
           _button('User', Page.user),
           _button('Registration', Page.registration),
+          _button('SignUp', Page.signUp)
         ],
       );
 }

@@ -1,6 +1,7 @@
 import 'package:bloc_mvu_app/sign_up/sign_up_message.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_model.dart';
 import 'package:bloc_mvu_app/mvu/update.dart';
+import 'package:bloc_mvu_app/user/user_model.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class SignUpUpdate extends Update<SignUpMessage, SignUpModel> {
     if (message is ChangePasswordVisibility) {
       return Some(model.copyWith(obscurePassword: !model.obscurePassword));
     }
+    if (message is SignUpUser) {}
     return const None();
   }
 }

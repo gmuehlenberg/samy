@@ -5,6 +5,7 @@ import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/navigation/navigation_view.dart';
 import 'package:bloc_mvu_app/registration/registration_update.dart';
+import 'package:bloc_mvu_app/sign_up/sign_up_update.dart';
 import 'package:bloc_mvu_app/user/user_update.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,7 +22,8 @@ class BlocMvuTestApp extends StatelessWidget {
           BlocProvider(create: CounterUpdate.of),
           BlocProvider(create: LoginUpdate.of),
           BlocProvider(create: UserUpdate.of),
-          BlocProvider(create: RegistrationUpdate.of)
+          BlocProvider(create: RegistrationUpdate.of),
+          BlocProvider(create: SignUpUpdate.of)
         ],
         child: MaterialApp(
           navigatorKey: navigatorKey,

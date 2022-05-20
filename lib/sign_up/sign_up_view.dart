@@ -33,11 +33,6 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                             color: Colors.blue[900],
                             borderRadius: BorderRadius.circular(30)),*/
                         ),
-                        Icon(
-                          Icons.settings,
-                          color: Colors.grey,
-                          size: 40,
-                        )
                       ],
                     ),
                     SizedBox(
@@ -51,105 +46,113 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                       height: 10,
                     ),
                     Text(
-                      "Log in to find the perfect place for your youngster",
+                      "Sign up to find the perfect place for your youngster",
                       style: TextStyle(color: Colors.grey[700], fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 15,
                     ),
                   ],
                 ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        TextField(
-                          decoration: InputDecoration(labelText: "Email", border: OutlineInputBorder()),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        TextField(
-                          decoration: InputDecoration(labelText: "Email", border: OutlineInputBorder()),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        TextField(
-                          decoration: InputDecoration(labelText: "Email", border: OutlineInputBorder()),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        TextField(
-                          decoration: InputDecoration(labelText: "Email", border: OutlineInputBorder()),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        TextField(
-                          decoration: InputDecoration(labelText: "Email", border: OutlineInputBorder()),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        TextField(
-                          decoration: InputDecoration(labelText: "Email", border: OutlineInputBorder()),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        TextField(
-                          obscureText: model.obscurePassword,
-                          decoration: InputDecoration(
-                              labelText: "Password",
-                              border: OutlineInputBorder(),
-                              suffixIcon: IconButton(
-                                icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
-                                onPressed: () {
-                                  dispatch(ChangePasswordVisibility());
-                                },
-                              ),),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: <Widget>[
-                            Row(
-                              children: <Widget>[
-                                RaisedButton(
-                                  child: Text('Register now', style: TextStyle(color: Colors.white, fontSize: 18)),
-                                  padding: EdgeInsets.all(15),
-                                  onPressed: () {},
-                                  color: Colors.blue[900],
-                                ),
-                              ],
+                Expanded(
+                  //mainAxisSize: MainAxisSize.min,
+                  child: Column(
+                    children: <Widget>[
+                      TextField(
+                        decoration: InputDecoration(labelText: "Surname", border: OutlineInputBorder()),
+                        controller: model.surnameController,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      TextField(
+                        decoration: InputDecoration(labelText: "Lastname", border: OutlineInputBorder()),
+                        controller: model.lastnameController,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            flex: 30,
+                            child: Container(
+                              child: TextField(
+                                decoration: InputDecoration(labelText: "Street", border: OutlineInputBorder()),
+                                controller: model.streetController,
+                              ),
                             ),
-                            Container(
-                              height: 30,
-                              width: 1,
-                              color: Colors.grey,
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Expanded(
+                            flex: 9,
+                            child: Container(
+                              child: TextField(
+                                decoration: InputDecoration(labelText: "Streetnumber", border: OutlineInputBorder()),
+                                controller: model.streetNumberController,
+                              ),
                             ),
-                            GestureDetector(
-                              onTap: () {},
-                              child: Text("FORGOT PASSWORD?"),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ],
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      TextField(
+                        decoration: InputDecoration(labelText: "Postcode", border: OutlineInputBorder()),
+                        controller: model.postCodeController,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      TextField(
+                        decoration: InputDecoration(labelText: "City", border: OutlineInputBorder()),
+                        controller: model.cityController,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      TextField(
+                        decoration: InputDecoration(labelText: "E-Mail", border: OutlineInputBorder()),
+                        controller: model.mailController,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      TextField(
+                        obscureText: model.obscurePassword,
+                        controller: model.passwordController,
+                        decoration: InputDecoration(
+                          labelText: "Password",
+                          border: OutlineInputBorder(),
+                          suffixIcon: IconButton(
+                            icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
+                            onPressed: () {
+                              dispatch(ChangePasswordVisibility());
+                            },
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   width: double.infinity,
                   child: RaisedButton(
                     child: Text(
-                      "Login",
+                      "Sign Up",
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     padding: EdgeInsets.all(15),
                     color: Colors.blue[900],
-                    onPressed: () {},
+                    onPressed: () {
+                      dispatch(SignUpUser());
+                    },
                   ),
                 )
               ],

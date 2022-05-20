@@ -13,5 +13,6 @@ class RegistrationModel {
       );
 }
 
-final RegistrationModel initialRegistrationModel =
-    RegistrationModel(obscurePassword: true,);
+final RegistrationModel initialRegistrationModel = RegistrationModel(
+  obscurePassword: true,
+);

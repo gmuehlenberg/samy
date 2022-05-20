@@ -13,14 +13,17 @@ class UserUpdate extends Update<UserMessage, UserModel> {
   @override
   Option<UserModel> processMessage(UserMessage message, UserModel model) {
     if (message is CreateUser) {
-      return Some(model.copyWith(
+      return Some(
+        model.copyWith(
           surname: 'Neuer',
           lastname: 'Olive Tree',
           street: "Karl-Liebknecht-Straße 38",
           city: 'Leipzig',
           postCode: '04107',
           mail: 'döner@olivetree.de',
-          password: 'dönermachtschöner123',),);
+          password: 'dönermachtschöner123',
+        ),
+      );
     }
     /*if (message is ChangeUser) {
       return Some(model.copyWith(isLoggedIn: false));

@@ -6,3 +6,5 @@ abstract class SignUpMessage extends UpdateMessage {
 }
 
 class ChangePasswordVisibility extends SignUpMessage {}
+
+class SignUpUser extends SignUpMessage {}
