@@ -16,6 +16,7 @@ doc/api/
 .packages
 .pub-cache/
 .pub/
+.gradle/
 /build/
 
 # Avoid committing generated Javascript files:
