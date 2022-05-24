@@ -1,3 +1,6 @@
+import 'package:bloc_mvu_app/mvu/update.dart';
+import 'package:bloc_mvu_app/user/user_update.dart';
+
 class UserModel {
   UserModel({
     required this.surname,
@@ -30,6 +33,18 @@ class UserModel {
         password: password ?? this.password,
         postCode: postCode ?? this.postCode,
       );
+
+
+  static UserModel get() {
+    final userUpdate = updateByType[UserUpdate];
+
+    if (userUpdate != null && userUpdate is UserUpdate) {
+      return userUpdate.model();
+    }
+
+    throw Exception('This app can not work without an instance of UserUpdate! Consider setting the lazy Parameter in the BlocBuilder to false.');
+  }
+
 }
 
 final UserModel initialUserModel = UserModel(

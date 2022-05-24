@@ -16,7 +16,9 @@ class SignUpUpdate extends Update<SignUpMessage, SignUpModel> {
       return Some(model.copyWith(obscurePassword: !model.obscurePassword));
     }
     if (message is SignUpUser) {
-      //Wie UserModel kopieren??
+      //Frage: Wie UserModel kopieren??
+      //Antwort: UserModel userModel = UserModel.get();
+
       model.surnameController.text;
     }
     return const None();
