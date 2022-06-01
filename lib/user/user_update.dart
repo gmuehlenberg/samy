@@ -18,8 +18,11 @@ class UserUpdate extends Update<UserMessage, UserModel> {
 
     //null ersetzen
 
-    if (message is UpdateUserInfo) {
+    /*if (message is UpdateUserInfo) {
       return Some(model.copyWith());
+    }*/
+    if (message is CreateUser) {
+      model.copyWith(message.user);
     }
     /*if (message is ChangeUser) {
       return Some(model.copyWith(isLoggedIn: false));

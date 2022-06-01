@@ -23,8 +23,8 @@ class MenuView extends ViewWithoutModel {
           padding: EdgeInsets.zero,
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text('Vorname Nachname'),
-              accountEmail: Text('example@gmail.com'),
+              accountName: const Text('Vorname Nachname'),
+              accountEmail: const Text('example@gmail.com'),
               currentAccountPicture: CircleAvatar(
                 child: ClipOval(
                   child: Image.network(
@@ -38,15 +38,16 @@ class MenuView extends ViewWithoutModel {
               decoration: const BoxDecoration(
                 color: Colors.blue,
                 image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage('https://oflutter.com/wp-content/uploads/2021/02/profile-bg3.jpg')),
+                  fit: BoxFit.fill,
+                  image: NetworkImage('https://oflutter.com/wp-content/uploads/2021/02/profile-bg3.jpg'),
+                ),
               ),
             ),
-            _button('Login', Icon(Icons.login), Page.login),
+            _button('Login', const Icon(Icons.login), Page.login),
             const Divider(),
-            _button('User', Icon(Icons.supervised_user_circle), Page.user),
-            _button('Registration', Icon(Icons.app_registration), Page.registration),
-            _button('SignUp', Icon(Icons.login), Page.signUp)
+            _button('User', const Icon(Icons.supervised_user_circle), Page.user),
+            _button('Registration', const Icon(Icons.app_registration), Page.registration),
+            _button('SignUp', const Icon(Icons.login), Page.signUp)
           ],
         ),
       );

@@ -4,6 +4,7 @@ import 'package:bloc_mvu_app/sign_up/sign_up_message.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_model.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_update.dart';
 import 'package:bloc_mvu_app/user/user_message.dart';
+import 'package:bloc_mvu_app/user/user_model.dart';
 import 'package:flutter/material.dart';
 
 class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
@@ -122,7 +123,21 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                       backgroundColor: Colors.blue[900],
                     ),
                     onPressed: () {
-                      dispatch(CreateUser());
+                      dispatch(
+                        CreateUser(
+                          User(
+                            surname: model.surnameController.text,
+                            lastname: model.lastnameController.text,
+                            street: model.streetController.text,
+                            city: model.cityController.text,
+                            mail: model.mailController.text,
+                            password: model.passwordController.text,
+                            postCode: model.postCodeController.text,
+                          ),
+                        ),
+                      );
+                      // PopUp-Fenster anzeigen
+                      // NavigateTo anderer Page
                     },
                     child: const Text(
                       'Sign Up',

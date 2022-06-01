@@ -101,8 +101,10 @@ class RegistrationView extends View<RegistrationMessage, RegistrationModel, Regi
                                           backgroundColor: Colors.blue[900],
                                         ),
                                         onPressed: () {},
-                                        child: const Text('Register now',
-                                            style: TextStyle(color: Colors.white, fontSize: 18)),
+                                        child: const Text(
+                                          'Register now',
+                                          style: TextStyle(color: Colors.white, fontSize: 18),
+                                        ),
                                       ),
                                     ],
                                   ),
