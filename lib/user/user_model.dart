@@ -1,15 +1,16 @@
 import 'package:bloc_mvu_app/mvu/update.dart';
 import 'package:bloc_mvu_app/user/user_update.dart';
+import 'package:dartz/dartz.dart';
 
 class UserModel {
   UserModel({
     required this.user,
   });
 
-  final User user;
+  final Option<User> user;
 
   UserModel copyWith(
-    User? user,
+    Option<User>? user,
   ) =>
       UserModel(
         // Returns new UserModel with new values for class variables, if passed through copyWith function. Otherwise variables will be kept with old values
@@ -43,6 +44,7 @@ class User {
   final String surname, lastname, street, postCode, city, mail, password;
 }
 
+// TODO: initialUser rauslöschen, sobald Login funktioniert.
 final User initialUser = User(
   surname: 'Olive',
   lastname: 'Tree',
@@ -53,4 +55,4 @@ final User initialUser = User(
   postCode: '04107',
 );
 
-final UserModel initialUserModel = UserModel(user: initialUser);
+final UserModel initialUserModel = UserModel(user: some(initialUser));

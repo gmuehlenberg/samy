@@ -8,11 +8,27 @@ class UserView extends View<UserMessage, UserModel, UserUpdate> {
   const UserView({Key? key}) : super(key: key);
 
   @override
-  Widget buildView(UserModel model) => Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: const [
-          Text('Nutzeransicht'),
-          //restlicher Inhalt hier hin
-        ],
+  Widget buildView(UserModel model) => Scaffold(
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: ListView(
+              children: [
+                Text('Nutzeransicht'),
+                userDetails(model),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
       );
 }
+
+Widget userDetails(UserModel model) =>
+    model.user.map((user) => Text('Vorname: ${user.surname}')).getOrElse(() => Text('Kein User ausgewählt'));
