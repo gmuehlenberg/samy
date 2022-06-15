@@ -47,7 +47,8 @@ class MenuView extends ViewWithoutModel {
             const Divider(),
             _button('User', const Icon(Icons.supervised_user_circle), Page.user),
             _button('Registration', const Icon(Icons.app_registration), Page.registration),
-            _button('SignUp', const Icon(Icons.login), Page.signUp)
+            _button('SignUp', const Icon(Icons.login), Page.signUp),
+            _button('View Offers', const Icon(Icons.school), Page.offers),
           ],
         ),
       );

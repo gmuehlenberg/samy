@@ -4,6 +4,7 @@ import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
 import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_update.dart';
+import 'package:bloc_mvu_app/offers/offers_view.dart';
 import 'package:bloc_mvu_app/pages/menu/menu_view.dart';
 import 'package:bloc_mvu_app/registration/registration_view.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_view.dart';
@@ -48,5 +49,7 @@ Widget widgetFor(Page page) {
       return const RegistrationView();
     case Page.signUp:
       return const SignUpView();
+    case Page.offers:
+      return const OffersView();
   }
 }

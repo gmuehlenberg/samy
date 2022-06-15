@@ -1,3 +1,6 @@
+// ignore: flutter_style_todos
+// ignore: flutter_style_todos
+// ignore: flutter_style_todos
 import 'package:bloc_mvu_app/mvu/update.dart';
 import 'package:bloc_mvu_app/user/user_update.dart';
 import 'package:dartz/dartz.dart';
@@ -39,9 +42,10 @@ class User {
     required this.mail,
     required this.password,
     required this.postCode,
+    required this.image,
   });
 
-  final String surname, lastname, street, postCode, city, mail, password;
+  final String surname, lastname, street, postCode, city, mail, password, image;
 }
 
 // TODO: initialUser rauslöschen, sobald Login funktioniert.
@@ -53,6 +57,7 @@ final User initialUser = User(
   mail: 'döner@olivetree.de',
   password: 'dönerMachtschöner',
   postCode: '04107',
+  image: 'assets/samy_small.png',
 );
 
 final UserModel initialUserModel = UserModel(user: some(initialUser));

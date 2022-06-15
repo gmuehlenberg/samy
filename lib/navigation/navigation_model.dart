@@ -16,4 +16,4 @@ final NavigationModel initialNavigationModel = NavigationModel(Page.login);
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
-enum Page { login, user, registration, signUp }
+enum Page { login, user, registration, signUp, offers }

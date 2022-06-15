@@ -12,23 +12,29 @@ class UserView extends View<UserMessage, UserModel, UserUpdate> {
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20),
-            child: ListView(
-              children: [
-                Text('Nutzeransicht'),
-                userDetails(model),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Container(),
-                  ],
-                ),
-              ],
-            ),
+            // ignore: unnecessary_cast
+            child: model.user
+                .map(
+                  (user) => ListView(
+                    children: [
+                      const Text('Nutzeransicht'),
+                      Text(user.surname),
+                      userDetails(model),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(),
+                        ],
+                      ),
+                    ],
+                  ) as Widget,
+                )
+                .getOrElse(() => const Text('Kein User ausgewählt')),
           ),
         ),
       );
 }
 
 Widget userDetails(UserModel model) =>
-    model.user.map((user) => Text('Vorname: ${user.surname}')).getOrElse(() => Text('Kein User ausgewählt'));
+    model.user.map((user) => Text('Vorname: ${user.surname}')).getOrElse(() => const Text('Kein User ausgewählt'));

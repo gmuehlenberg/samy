@@ -133,6 +133,7 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                             mail: model.mailController.text,
                             password: model.passwordController.text,
                             postCode: model.postCodeController.text,
+                            image: 'assets/samy_small.png', // Platzhalter!
                           ),
                         ),
                       );

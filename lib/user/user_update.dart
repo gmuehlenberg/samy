@@ -13,7 +13,7 @@ class UserUpdate extends Update<UserMessage, UserModel> {
   @override
   Option<UserModel> processMessage(UserMessage message, UserModel model) {
     if (message is CreateUser) {
-      return Some(model);
+      return Some(model.copyWith(some(message.user)));
     }
 
     //null ersetzen
@@ -21,9 +21,6 @@ class UserUpdate extends Update<UserMessage, UserModel> {
     /*if (message is UpdateUserInfo) {
       return Some(model.copyWith());
     }*/
-    if (message is CreateUser) {
-      model.copyWith(some(message.user));
-    }
     /*if (message is ChangeUser) {
       return Some(model.copyWith(isLoggedIn: false));
     }
