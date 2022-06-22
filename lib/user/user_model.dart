@@ -71,7 +71,7 @@ class User {
         city: city,
         mail: mail,
         password: password,
-        image: 'Platzhalter');
+        image: 'Platzhalter',);
   }
 
   final String surname, lastname, street, streetNumber, postCode, city, mail, password, image;

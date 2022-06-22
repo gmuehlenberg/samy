@@ -20,6 +20,7 @@ class UserView extends View<UserMessage, UserModel, UserUpdate> {
                     children: [
                       const Text('Nutzeransicht'),
                       Text(user.surname),
+                      Text(user.id.getOrElse(() => 'Keine ID vergeben')),
                       userDetails(model),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
