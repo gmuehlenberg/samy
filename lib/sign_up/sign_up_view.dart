@@ -72,6 +72,34 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                       const SizedBox(
                         height: 10,
                       ),
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            flex: 30,
+                            child: TextField(
+                              decoration: const InputDecoration(labelText: 'Street', border: OutlineInputBorder()),
+                              controller: model.streetController,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Expanded(
+                            flex: 9,
+                            child: TextField(
+                              decoration:
+                              const InputDecoration(labelText: 'Streetnumber', border: OutlineInputBorder()),
+                              controller: model.streetNumberController,
+                            ),
+                          ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                    ],
+                    ),
                       const SizedBox(
                         height: 10,
                       ),
@@ -130,6 +158,7 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                             surname: model.surnameController.text,
                             lastname: model.lastnameController.text,
                             street: model.streetController.text,
+                            streetNumber: model.streetNumberController.text,
                             city: model.cityController.text,
                             mail: model.mailController.text,
                             password: model.passwordController.text,

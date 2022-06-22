@@ -1,11 +1,9 @@
 import 'package:bloc_mvu_app/config/config_update.dart';
-import 'package:bloc_mvu_app/counter/counter_update.dart';
-import 'package:bloc_mvu_app/login/login_update.dart';
 import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/navigation/navigation_view.dart';
 import 'package:bloc_mvu_app/offers/offers_update.dart';
-import 'package:bloc_mvu_app/registration/registration_update.dart';
+import 'package:bloc_mvu_app/sign_in/sign_in_update.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_update.dart';
 import 'package:bloc_mvu_app/user/user_update.dart';
 import 'package:flutter/material.dart';
@@ -20,10 +18,8 @@ class BlocMvuTestApp extends StatelessWidget {
         providers: const [
           BlocProvider(create: NavigationUpdate.of),
           BlocProvider(create: ConfigUpdate.of, lazy: false),
-          BlocProvider(create: CounterUpdate.of),
-          BlocProvider(create: LoginUpdate.of),
           BlocProvider(create: UserUpdate.of, lazy: false),
-          BlocProvider(create: RegistrationUpdate.of),
+          BlocProvider(create: SignInUpdate.of),
           BlocProvider(create: SignUpUpdate.of),
           BlocProvider(create: OffersUpdate.of),
         ],

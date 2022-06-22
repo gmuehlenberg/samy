@@ -43,10 +43,9 @@ class MenuView extends ViewWithoutModel {
                 ),
               ),
             ),
-            _button('Login', const Icon(Icons.login), Page.login),
             const Divider(),
             _button('User', const Icon(Icons.supervised_user_circle), Page.user),
-            _button('Registration', const Icon(Icons.app_registration), Page.registration),
+            _button('SignIn', const Icon(Icons.app_registration), Page.signIn),
             _button('SignUp', const Icon(Icons.login), Page.signUp),
             _button('View Offers', const Icon(Icons.school), Page.offers),
           ],
@@ -71,7 +70,7 @@ class MenuView extends ViewWithoutModel {
           ),
           _button('Login', Page.login),
           _button('User', Page.user),
-          _button('Registration', Page.registration),
+          _button('Registration', Page.sign_in),
           _button('SignUp', Page.signUp)
         ],
       );

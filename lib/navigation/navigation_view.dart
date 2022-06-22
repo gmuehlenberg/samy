@@ -1,4 +1,3 @@
-import 'package:bloc_mvu_app/login/login_view.dart';
 import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
@@ -6,7 +5,7 @@ import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/offers/offers_view.dart';
 import 'package:bloc_mvu_app/pages/menu/menu_view.dart';
-import 'package:bloc_mvu_app/registration/registration_view.dart';
+import 'package:bloc_mvu_app/sign_in/sign_in_view.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_view.dart';
 import 'package:bloc_mvu_app/user/user_view.dart';
 import 'package:flutter/material.dart' hide Page;
@@ -41,12 +40,10 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
 
 Widget widgetFor(Page page) {
   switch (page) {
-    case Page.login:
-      return const LoginView();
     case Page.user:
       return const UserView();
-    case Page.registration:
-      return const RegistrationView();
+    case Page.signIn:
+      return const SignInView();
     case Page.signUp:
       return const SignUpView();
     case Page.offers:

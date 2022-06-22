@@ -1,18 +1,18 @@
-class RegistrationModel {
-  RegistrationModel({
+class SignInModel {
+  SignInModel({
     required this.obscurePassword,
   });
 
   final bool obscurePassword;
 
-  RegistrationModel copyWith({
+  SignInModel copyWith({
     bool? obscurePassword,
   }) =>
-      RegistrationModel(
+      SignInModel(
         obscurePassword: obscurePassword ?? this.obscurePassword,
       );
 }
 
-final RegistrationModel initialRegistrationModel = RegistrationModel(
+final SignInModel initialSignInModel = SignInModel(
   obscurePassword: true,
 );

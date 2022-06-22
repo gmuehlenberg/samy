@@ -38,6 +38,7 @@ class User {
     required this.surname,
     required this.lastname,
     required this.street,
+    required this.streetNumber,
     required this.city,
     required this.mail,
     required this.password,
@@ -54,6 +55,7 @@ class User {
     final surname = data['surname'] as String;
     final lastname = data['lastname'] as String;
     final street = data['street'] as String;
+    final streetNumber = data['street'] as String;
     final postCode = data['postCode'] as String;
     final city = data['city'] as String;
     final mail = data['mail'] as String;
@@ -64,6 +66,7 @@ class User {
         surname: surname,
         lastname: lastname,
         street: street,
+        streetNumber: streetNumber,
         postCode: postCode,
         city: city,
         mail: mail,
@@ -71,7 +74,7 @@ class User {
         image: 'Platzhalter');
   }
 
-  final String surname, lastname, street, postCode, city, mail, password, image;
+  final String surname, lastname, street, streetNumber, postCode, city, mail, password, image;
   final Option<String> id; // ID is set after initial user instantiation once API response arrived
 
 }
@@ -80,7 +83,8 @@ class User {
 final User initialUser = User(
   surname: 'Olive',
   lastname: 'Tree',
-  street: 'Karl-Liebknecht-Straße 38',
+  street: 'Karl-Liebknecht-Straße',
+  streetNumber: '38',
   city: 'Leipzig',
   mail: 'döner@olivetree.de',
   password: 'dönerMachtschöner',

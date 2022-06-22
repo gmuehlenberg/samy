@@ -1,15 +1,15 @@
 import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/view.dart';
-import 'package:bloc_mvu_app/registration/registration_message.dart';
-import 'package:bloc_mvu_app/registration/registration_model.dart';
-import 'package:bloc_mvu_app/registration/registration_update.dart';
+import 'package:bloc_mvu_app/sign_in/sign_in_message.dart';
+import 'package:bloc_mvu_app/sign_in/sign_in_model.dart';
+import 'package:bloc_mvu_app/sign_in/sign_in_update.dart';
 import 'package:flutter/material.dart';
 
-class RegistrationView extends View<RegistrationMessage, RegistrationModel, RegistrationUpdate> {
-  const RegistrationView({Key? key}) : super(key: key);
+class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
+  const SignInView({Key? key}) : super(key: key);
 
   @override
-  Widget buildView(RegistrationModel model) => Scaffold(
+  Widget buildView(SignInModel model) => Scaffold(
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20),
