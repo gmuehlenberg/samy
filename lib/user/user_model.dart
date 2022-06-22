@@ -43,9 +43,37 @@ class User {
     required this.password,
     required this.postCode,
     required this.image,
+    required this.id,
   });
 
+  // noch editieren!
+  factory User.fromJSON(Map<String, dynamic> data) {
+    // note the explicit cast to String
+    // this is required if robust lint rules are enabled
+    final id = data['id'] as Option<String>;
+    final surname = data['surname'] as String;
+    final lastname = data['lastname'] as String;
+    final street = data['street'] as String;
+    final postCode = data['postCode'] as String;
+    final city = data['city'] as String;
+    final mail = data['mail'] as String;
+    final password = data['password'] as String;
+
+    return User(
+        id: id,
+        surname: surname,
+        lastname: lastname,
+        street: street,
+        postCode: postCode,
+        city: city,
+        mail: mail,
+        password: password,
+        image: 'Platzhalter');
+  }
+
   final String surname, lastname, street, postCode, city, mail, password, image;
+  final Option<String> id; // ID is set after initial user instantiation once API response arrived
+
 }
 
 // TODO: initialUser rauslöschen, sobald Login funktioniert.
@@ -58,6 +86,7 @@ final User initialUser = User(
   password: 'dönerMachtschöner',
   postCode: '04107',
   image: 'assets/samy_small.png',
+  id: const None(),
 );
 
 final UserModel initialUserModel = UserModel(user: some(initialUser));

@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_cast
+
 import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/user/user_message.dart';
 import 'package:bloc_mvu_app/user/user_model.dart';
@@ -12,7 +14,6 @@ class UserView extends View<UserMessage, UserModel, UserUpdate> {
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20),
-            // ignore: unnecessary_cast
             child: model.user
                 .map(
                   (user) => ListView(

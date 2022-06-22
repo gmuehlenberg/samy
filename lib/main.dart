@@ -22,7 +22,7 @@ class BlocMvuTestApp extends StatelessWidget {
           BlocProvider(create: ConfigUpdate.of, lazy: false),
           BlocProvider(create: CounterUpdate.of),
           BlocProvider(create: LoginUpdate.of),
-          BlocProvider(create: UserUpdate.of),
+          BlocProvider(create: UserUpdate.of, lazy: false),
           BlocProvider(create: RegistrationUpdate.of),
           BlocProvider(create: SignUpUpdate.of),
           BlocProvider(create: OffersUpdate.of),

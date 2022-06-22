@@ -75,8 +75,10 @@ Widget offerComponent({required Offer offer}) => Container(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(offer.schoolName,
-                              style: const TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w500)),
+                          Text(
+                            offer.schoolName,
+                            style: const TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w500),
+                          ),
                           const SizedBox(
                             height: 5,
                           ),
@@ -154,9 +156,10 @@ Widget offerComponent({required Offer offer}) => Container(
     );
 
 Offer initialOffer = Offer(
-    offeror: initialUser,
-    schoolName: 'Grundschule Leipzig',
-    schoolDistrict: 'Südvorstadt',
-    schoolClass: '1. Klasse',
-    firstSchoolDay: '01.09.2022',
-    creationTime: DateTime.now());
+  offeror: initialUser,
+  schoolName: 'Grundschule Leipzig',
+  schoolDistrict: 'Südvorstadt',
+  schoolClass: '1. Klasse',
+  firstSchoolDay: '01.09.2022',
+  creationTime: DateTime.now(),
+);

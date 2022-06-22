@@ -5,6 +5,7 @@ import 'package:bloc_mvu_app/sign_up/sign_up_model.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_update.dart';
 import 'package:bloc_mvu_app/user/user_message.dart';
 import 'package:bloc_mvu_app/user/user_model.dart';
+import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 
 class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
@@ -134,6 +135,7 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                             password: model.passwordController.text,
                             postCode: model.postCodeController.text,
                             image: 'assets/samy_small.png', // Platzhalter!
+                            id: const None(), // will be set later
                           ),
                         ),
                       );
