@@ -55,129 +55,129 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                   height: 15,
                 ),
                 Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      TextField(
-                        decoration: const InputDecoration(labelText: 'Surname', border: OutlineInputBorder()),
-                        controller: model.surnameController,
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      TextField(
-                        decoration: const InputDecoration(labelText: 'Lastname', border: OutlineInputBorder()),
-                        controller: model.lastnameController,
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      Row(
-                        children: <Widget>[
-                          Expanded(
-                            flex: 30,
-                            child: TextField(
-                              decoration: const InputDecoration(labelText: 'Street', border: OutlineInputBorder()),
-                              controller: model.streetController,
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Expanded(
-                            flex: 9,
-                            child: TextField(
-                              decoration:
-                              const InputDecoration(labelText: 'Streetnumber', border: OutlineInputBorder()),
-                              controller: model.streetNumberController,
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      TextField(
-                        decoration: const InputDecoration(labelText: 'Postcode', border: OutlineInputBorder()),
-                        controller: model.postCodeController,
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      TextField(
-                        decoration: const InputDecoration(labelText: 'City', border: OutlineInputBorder()),
-                        controller: model.cityController,
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      TextField(
-                        decoration: const InputDecoration(labelText: 'E-Mail', border: OutlineInputBorder()),
-                        controller: model.mailController,
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      TextField(
-                        obscureText: model.obscurePassword,
-                        controller: model.passwordController,
-                        decoration: InputDecoration(
-                          labelText: 'Password',
-                          border: const OutlineInputBorder(),
-                          suffixIcon: IconButton(
-                            icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
-                            onPressed: () {
-                              dispatch(ChangePasswordVisibility());
-                            },
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    TextField(
+                      decoration: const InputDecoration(labelText: 'Surname', border: OutlineInputBorder()),
+                      controller: model.surnameController,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    TextField(
+                      decoration: const InputDecoration(labelText: 'Lastname', border: OutlineInputBorder()),
+                      controller: model.lastnameController,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 30,
+                          child: TextField(
+                            decoration: const InputDecoration(labelText: 'Street', border: OutlineInputBorder()),
+                            controller: model.streetController,
                           ),
                         ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Expanded(
+                          flex: 9,
+                          child: TextField(
+                            decoration: const InputDecoration(labelText: 'Streetnumber', border: OutlineInputBorder()),
+                            controller: model.streetNumberController,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    TextField(
+                      decoration: const InputDecoration(labelText: 'Postcode', border: OutlineInputBorder()),
+                      controller: model.postCodeController,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    TextField(
+                      decoration: const InputDecoration(labelText: 'City', border: OutlineInputBorder()),
+                      controller: model.cityController,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    TextField(
+                      decoration: const InputDecoration(labelText: 'E-Mail', border: OutlineInputBorder()),
+                      controller: model.mailController,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    TextField(
+                      obscureText: model.obscurePassword,
+                      controller: model.passwordController,
+                      decoration: InputDecoration(
+                        labelText: 'Password',
+                        border: const OutlineInputBorder(),
+                        suffixIcon: IconButton(
+                          icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
+                          onPressed: () {
+                            dispatch(ChangePasswordVisibility());
+                          },
+                        ),
                       ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                    ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                  ],
                 ),
-          SizedBox(
-            width: double.infinity,
-            child: TextButton(
-              style: TextButton.styleFrom(
-                padding: const EdgeInsets.all(15),
-                backgroundColor: Colors.blue[900],
-              ),
-              onPressed: () {
-                dispatch(
-                  CreateUser(
-                    User(
-                      surname: model.surnameController.text,
-                      lastname: model.lastnameController.text,
-                      street: model.streetController.text,
-                      streetNumber: model.streetNumberController.text,
-                      city: model.cityController.text,
-                      mail: model.mailController.text,
-                      password: model.passwordController.text,
-                      postCode: model.postCodeController.text,
-                      image: 'assets/samy_small.png', // Platzhalter!
-                      id: const None(), // will be set later
+                SizedBox(
+                  width: double.infinity,
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      padding: const EdgeInsets.all(15),
+                      backgroundColor: Colors.blue[900],
+                    ),
+                    onPressed: () {
+                      dispatch(
+                        CreateUser(
+                          User(
+                            surname: model.surnameController.text,
+                            lastname: model.lastnameController.text,
+                            street: model.streetController.text,
+                            streetNumber: model.streetNumberController.text,
+                            city: model.cityController.text,
+                            mail: model.mailController.text,
+                            password: model.passwordController.text,
+                            postCode: model.postCodeController.text,
+                            image: 'assets/samy_small.png',
+                            // Platzhalter!
+                            id: const None(), // will be set later
+                          ),
+                        ),
+                      );
+                      // PopUp-Fenster anzeigen
+                      // NavigateTo anderer Page
+                    },
+                    child: const Text(
+                      'Sign Up',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
-                );
-                // PopUp-Fenster anzeigen
-                // NavigateTo anderer Page
-              },
-              child: const Text(
-                'Sign Up',
-                style: TextStyle(color: Colors.white, fontSize: 18),
-              ),
+                ),
+              ],
             ),
           ),
-          ],
         ),
-  ),
-  ),
-  );
+      );
 }

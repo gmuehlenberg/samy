@@ -62,16 +62,17 @@ class User {
     final password = data['password'] as String;
 
     return User(
-        id: id,
-        surname: surname,
-        lastname: lastname,
-        street: street,
-        streetNumber: streetNumber,
-        postCode: postCode,
-        city: city,
-        mail: mail,
-        password: password,
-        image: 'Platzhalter',);
+      id: id,
+      surname: surname,
+      lastname: lastname,
+      street: street,
+      streetNumber: streetNumber,
+      postCode: postCode,
+      city: city,
+      mail: mail,
+      password: password,
+      image: 'Platzhalter',
+    );
   }
 
   final String surname, lastname, street, streetNumber, postCode, city, mail, password, image;

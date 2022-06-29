@@ -8,6 +8,7 @@ abstract class UserMessage extends UpdateMessage {
 
 class CreateUser extends UserMessage {
   CreateUser(this.user);
+
   final User user;
 }
 

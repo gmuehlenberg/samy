@@ -1,5 +1,6 @@
 import 'package:bloc_mvu_app/user/user_model.dart';
 import 'package:flutter/material.dart';
+import 'package:latlong2/latlong.dart';
 
 class OffersModel {
   OffersModel({
@@ -16,22 +17,19 @@ class OffersModel {
       );
 }
 
-final OffersModel initialOffersModel = OffersModel(
-  offersList: [initialOffer, initialOffer], // wie diese Liste korrekt übergeben?
-);
-
+// class Offer represents an created offer with all its details
 class Offer {
   Offer({
     required this.offeror,
-    required this.schoolName,
-    required this.schoolDistrict,
+    required this.school,
     required this.schoolClass,
     required this.firstSchoolDay,
     required this.creationTime, // must be handed over as DateTime.now() when class is instantiated
   });
 
-  final String schoolName, schoolDistrict, schoolClass, firstSchoolDay;
   final User offeror;
+  final School school;
+  final String schoolClass, firstSchoolDay;
   final DateTime creationTime;
 
   int timeSinceCreation() {
@@ -40,6 +38,24 @@ class Offer {
   }
 }
 
+class School {
+  School({
+    required this.name,
+    required this.street,
+    required this.streetNumber,
+    required this.postCode,
+    required this.city,
+    required this.district,
+    required this.position,
+    required this.telephone,
+    required this.type,
+  });
+
+  final String name, street, streetNumber, postCode, city, district, telephone, type;
+  final LatLng position;
+}
+
+// offerComponent() is required to build list items for ListView.builder in offers_view.dart
 Widget offerComponent({required Offer offer}) => Container(
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.only(bottom: 15),
@@ -76,13 +92,13 @@ Widget offerComponent({required Offer offer}) => Container(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            offer.schoolName,
+                            offer.school.name,
                             style: const TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w500),
                           ),
                           const SizedBox(
                             height: 5,
                           ),
-                          Text(offer.schoolDistrict, style: TextStyle(color: Colors.grey[500])),
+                          Text(offer.school.district, style: TextStyle(color: Colors.grey[500])),
                         ],
                       ),
                     )
@@ -155,11 +171,28 @@ Widget offerComponent({required Offer offer}) => Container(
       ),
     );
 
+// initialOffer is used as placeholder during development time
 Offer initialOffer = Offer(
   offeror: initialUser,
-  schoolName: 'Grundschule Leipzig',
-  schoolDistrict: 'Südvorstadt',
+  school: schuleAmAddisAbebaPlatz,
   schoolClass: '1. Klasse',
   firstSchoolDay: '01.09.2022',
   creationTime: DateTime.now(),
 );
+
+// initialOffersModel is used as placeholder during development time
+final OffersModel initialOffersModel = OffersModel(
+  offersList: [initialOffer, initialOffer, initialOffer, initialOffer],
+);
+
+// List of sample schools in Leipzig with details
+School schuleAmAddisAbebaPlatz = School(
+    name: 'Schule am Addis-Abeba-Platz',
+    street: 'Addis-Abeba-Platz',
+    streetNumber: '1',
+    postCode: '04103',
+    city: 'Leipzig',
+    district: 'Zentrum-Südost',
+    position: LatLng(51.333871, 12.379632),
+    telephone: '034130859780',
+    type: 'Grundschule');

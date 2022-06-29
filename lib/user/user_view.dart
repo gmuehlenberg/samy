@@ -19,9 +19,12 @@ class UserView extends View<UserMessage, UserModel, UserUpdate> {
                   (user) => ListView(
                     children: [
                       const Text('Nutzeransicht'),
-                      Text(user.surname),
+                      Text('Vorname: ${user.surname}'),
+                      Text('Nachname: ${user.lastname}'),
+                      Text('Adresse: ${user.street} ${user.streetNumber}, ${user.postCode} ${user.city}'),
+                      Text('Email: ${user.mail}'),
                       Text(user.id.getOrElse(() => 'Keine ID vergeben')),
-                      userDetails(model),
+                      //userDetails(model),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,

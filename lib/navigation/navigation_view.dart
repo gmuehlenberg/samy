@@ -18,7 +18,7 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
         key: scaffoldKey,
         appBar: AppBar(
           title: const Text(
-            'Login App',
+            'SAMY',
           ),
           backgroundColor: Colors.greenAccent,
           actions: [

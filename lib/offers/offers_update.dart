@@ -15,9 +15,7 @@ class OffersUpdate extends Update<OffersMessage, OffersModel> {
     if (message is AddOffer) {
       // return Some(model.copyWith(/*hier gehen neue Argumente rein */));
     }
-    if (message is PlatzhalterMessage) {
-      // Action goes here. Platzhalter.
-    }
+    if (message is SchoolSelectedFromMap) {}
     return const None();
   }
 }
