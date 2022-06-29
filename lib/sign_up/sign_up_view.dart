@@ -54,9 +54,8 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                 const SizedBox(
                   height: 15,
                 ),
-                Expanded(
-                  //mainAxisSize: MainAxisSize.min,
-                  child: Column(
+                Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       TextField(
                         decoration: const InputDecoration(labelText: 'Surname', border: OutlineInputBorder()),
@@ -92,14 +91,14 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                               controller: model.streetNumberController,
                             ),
                           ),
-                      const SizedBox(
-                        height: 10,
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                        ],
                       ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                    ],
-                    ),
                       const SizedBox(
                         height: 10,
                       ),
@@ -142,44 +141,43 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                         height: 10,
                       ),
                     ],
-                  ),
                 ),
-                SizedBox(
-                  width: double.infinity,
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      padding: const EdgeInsets.all(15),
-                      backgroundColor: Colors.blue[900],
-                    ),
-                    onPressed: () {
-                      dispatch(
-                        CreateUser(
-                          User(
-                            surname: model.surnameController.text,
-                            lastname: model.lastnameController.text,
-                            street: model.streetController.text,
-                            streetNumber: model.streetNumberController.text,
-                            city: model.cityController.text,
-                            mail: model.mailController.text,
-                            password: model.passwordController.text,
-                            postCode: model.postCodeController.text,
-                            image: 'assets/samy_small.png', // Platzhalter!
-                            id: const None(), // will be set later
-                          ),
-                        ),
-                      );
-                      // PopUp-Fenster anzeigen
-                      // NavigateTo anderer Page
-                    },
-                    child: const Text(
-                      'Sign Up',
-                      style: TextStyle(color: Colors.white, fontSize: 18),
+          SizedBox(
+            width: double.infinity,
+            child: TextButton(
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.all(15),
+                backgroundColor: Colors.blue[900],
+              ),
+              onPressed: () {
+                dispatch(
+                  CreateUser(
+                    User(
+                      surname: model.surnameController.text,
+                      lastname: model.lastnameController.text,
+                      street: model.streetController.text,
+                      streetNumber: model.streetNumberController.text,
+                      city: model.cityController.text,
+                      mail: model.mailController.text,
+                      password: model.passwordController.text,
+                      postCode: model.postCodeController.text,
+                      image: 'assets/samy_small.png', // Platzhalter!
+                      id: const None(), // will be set later
                     ),
                   ),
-                ),
-              ],
+                );
+                // PopUp-Fenster anzeigen
+                // NavigateTo anderer Page
+              },
+              child: const Text(
+                'Sign Up',
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
             ),
           ),
+          ],
         ),
-      );
+  ),
+  ),
+  );
 }
