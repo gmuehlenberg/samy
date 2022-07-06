@@ -49,9 +49,10 @@ class School {
     required this.position,
     required this.telephone,
     required this.type,
+    required this.picture,
   });
 
-  final String name, street, streetNumber, postCode, city, district, telephone, type;
+  final String name, street, streetNumber, postCode, city, district, telephone, type, picture;
   final LatLng position;
 }
 
@@ -83,7 +84,7 @@ Widget offerComponent({required Offer offer}) => Container(
                       height: 60,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(offer.offeror.image),
+                        child: Image.asset(offer.school.picture),
                       ),
                     ),
                     const SizedBox(width: 10),
@@ -195,4 +196,77 @@ School schuleAmAddisAbebaPlatz = School(
     district: 'Zentrum-Südost',
     position: LatLng(51.333871, 12.379632),
     telephone: '034130859780',
-    type: 'Grundschule');
+    type: 'Grundschule',
+    picture: 'assets/pic_schuleAmAddisAbebaPlatz.jpg');
+
+School schuleAmFlossplatz = School(
+    name: 'Schule am Floßplatz',
+    street: 'Hohe Straße',
+    streetNumber: '45',
+    postCode: '04107',
+    city: 'Leipzig',
+    district: 'Zentrum-Süd',
+    position: LatLng(51.3296509, 12.3720827),
+    telephone: '034126178680',
+    type: 'Grundschule',
+    picture: 'assets/pic_schuleAmFlossplatz.jpg');
+
+School grundschuleWilhelmBusch = School(
+    name: 'Grundschule Wilhelm-Busch',
+    street: 'Heinrichstraße',
+    streetNumber: '43',
+    postCode: '04317',
+    city: 'Leipzig',
+    district: 'Detroitnitz',
+    position: LatLng(51.3360745,12.4005866),
+    telephone: '03416493325',
+    type: 'Grundschule',
+    picture: 'assets/pic_grundschuleWilhelmBusch.jpg');
+
+School pabloNerudaSchule = School(
+    name: 'Pablo-Neruda-Schule',
+    street: 'Tarostraße',
+    streetNumber: '6',
+    postCode: '04103',
+    city: 'Leipzig',
+    district: 'Zentrum-Südost',
+    position: LatLng(51.3258315,12.384723),
+    telephone: '03411245890',
+    type: 'Grundschule',
+    picture: 'assets/pic_pabloNerudaSchule.jpg');
+
+School fritzBaumgartenSchule = School(
+    name: 'Fritz-Baumgarten-Schule',
+    street: 'Riebeckstraße',
+    streetNumber: '50',
+    postCode: '04317',
+    city: 'Leipzig',
+    district: 'Thonberg',
+    position: LatLng(51.3265687,12.4022076),
+    telephone: '03412308980',
+    type: 'Grundschule',
+    picture: 'assets/pic_fritzBaumgartenSchule.jpg');
+
+School grundschuleBernhardGoeringStrasse = School(
+    name: 'Grundschule an der Bernhard-Göring-Straße',
+    street: 'Bernhard-Göring-Straße',
+    streetNumber: '107',
+    postCode: '04275',
+    city: 'Leipzig',
+    district: 'Südvorstadt',
+    position: LatLng(51.3182725,12.3768613),
+    telephone: '034122537200',
+    type: 'Grundschule',
+    picture: 'assets/pic_grundschuleBernhardGoeringStrasse.jpg');
+
+School grundschuleThomanum = School(
+    name: 'Grundschule thomanum',
+    street: 'Sebastian-Bach-Straße',
+    streetNumber: '1',
+    postCode: '04109',
+    city: 'Leipzig',
+    district: 'Zentrum-West',
+    position: LatLng(51.3366427,12.3613236),
+    telephone: '034197434421',
+    type: 'Grundschule',
+    picture: 'assets/pic_grundschuleThomanum.jpg');
