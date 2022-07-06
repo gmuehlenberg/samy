@@ -19,8 +19,10 @@ class UserUpdate extends Update<UserMessage, UserModel> {
   Option<UserModel> processMessage(UserMessage message, UserModel model) {
     if (message is CreateUser) {
       // TODO: Hier müssen wir mal noch ran, so dass der neue User, der von addUserToBackend angelegt wird, auch in das UserModel übernommen wird und im Userview angezeigt wird.
-      final newUser = addUserToBackend(message.user) as User;
-      return Some(model.copyWith(some(newUser)));
+      //final newUser = addUserToBackend(message.user) as User;
+      //return Some(model.copyWith(some(newUser)));
+      addUserToBackend(message.user);
+      return Some(model.copyWith(some(message.user)));
     }
 
     /*if (message is UpdateUserInfo) {
