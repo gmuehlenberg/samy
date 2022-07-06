@@ -15,6 +15,12 @@ class OffersUpdate extends Update<OffersMessage, OffersModel> {
     if (message is AddOffer) {
       // return Some(model.copyWith(/*hier gehen neue Argumente rein */));
     }
+    if (message is OfferSelectedFromList) {
+      final index = model.offersList.indexWhere((offer) => offer == message.offer);
+      model.offersList.replaceRange(index, index+1, [message.offer.toggleHighlight()]);
+      return Some(model.copyWith(model.offersList));
+    }
+
     if (message is SchoolSelectedFromMap) {}
     return const None();
   }

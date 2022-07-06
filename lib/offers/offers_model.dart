@@ -1,6 +1,9 @@
 import 'package:bloc_mvu_app/user/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
+import 'package:bloc_mvu_app/offers/offers_message.dart';
+
+import '../mvu/messaging.dart';
 
 class OffersModel {
   OffersModel({
@@ -24,13 +27,24 @@ class Offer {
     required this.school,
     required this.schoolClass,
     required this.firstSchoolDay,
-    required this.creationTime, // must be handed over as DateTime.now() when class is instantiated
+    required this.creationTime,
+    required this.highlighted, // must be handed over as DateTime.now() when class is instantiated
   });
 
   final User offeror;
   final School school;
   final String schoolClass, firstSchoolDay;
   final DateTime creationTime;
+  final bool highlighted;
+
+  Offer toggleHighlight() => Offer(
+    offeror: offeror,
+    school: school,
+    schoolClass: schoolClass,
+    firstSchoolDay: firstSchoolDay,
+    creationTime: creationTime,
+    highlighted: !highlighted,
+  );
 
   int timeSinceCreation() {
     final now = DateTime.now();
@@ -49,22 +63,38 @@ class School {
     required this.position,
     required this.telephone,
     required this.type,
+    required this.highlighted,
   });
 
   final String name, street, streetNumber, postCode, city, district, telephone, type;
   final LatLng position;
+  final bool highlighted;
+
+  School toggleHighlight() => School(
+    name: name,
+    street: street,
+    streetNumber: streetNumber,
+    postCode: postCode,
+    city: city,
+    district: district,
+    position: position,
+    telephone: telephone,
+    type: type,
+    highlighted: !highlighted,
+  );
 }
 
 // offerComponent() is required to build list items for ListView.builder in offers_view.dart
-Widget offerComponent({required Offer offer}) => Container(
+Widget offerComponent({required Offer offer}) => InkWell(
+  child: Container(
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.only(bottom: 15),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.white,
+        color: offer.highlighted ? Colors.blue : Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.2),
+            color: offer.highlighted ? Colors.black.withOpacity(1) : Colors.grey.withOpacity(0.2),
             blurRadius: 2,
             offset: const Offset(0, 1),
           ),
@@ -93,12 +123,18 @@ Widget offerComponent({required Offer offer}) => Container(
                         children: [
                           Text(
                             offer.school.name,
-                            style: const TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w500),
+                            style: TextStyle(
+                                color: offer.highlighted ? Colors.white : Colors.black,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                            ),
                           ),
                           const SizedBox(
                             height: 5,
                           ),
-                          Text(offer.school.district, style: TextStyle(color: Colors.grey[500])),
+                          Text(offer.school.district,
+                              style: TextStyle(
+                                  color: offer.highlighted ? Colors.white : Colors.grey[700],),),
                         ],
                       ),
                     )
@@ -163,12 +199,19 @@ Widget offerComponent({required Offer offer}) => Container(
               ),
               Text(
                 '${offer.timeSinceCreation()} minutes ago',
-                style: TextStyle(color: Colors.grey.shade800, fontSize: 12),
+                style: TextStyle(
+                    color: offer.highlighted ? Colors.white : Colors.grey.shade800,
+                    fontSize: 12
+                ),
               )
             ],
           )
         ],
       ),
+    ),
+    onTap: () {
+      dispatch(OfferSelectedFromList(offer));
+    },
     );
 
 // initialOffer is used as placeholder during development time
@@ -178,11 +221,21 @@ Offer initialOffer = Offer(
   schoolClass: '1. Klasse',
   firstSchoolDay: '01.09.2022',
   creationTime: DateTime.now(),
+  highlighted: false,
+);
+
+Offer initialOffer2 = Offer(
+  offeror: initialUser,
+  school: schuleAmAddisAbebaPlatz,
+  schoolClass: '2. Klasse',
+  firstSchoolDay: '10.09.2022',
+  creationTime: DateTime.now(),
+  highlighted: false,
 );
 
 // initialOffersModel is used as placeholder during development time
 final OffersModel initialOffersModel = OffersModel(
-  offersList: [initialOffer, initialOffer, initialOffer, initialOffer],
+  offersList: [initialOffer, initialOffer, initialOffer, initialOffer2],
 );
 
 // List of sample schools in Leipzig with details
@@ -195,4 +248,6 @@ School schuleAmAddisAbebaPlatz = School(
     district: 'Zentrum-Südost',
     position: LatLng(51.333871, 12.379632),
     telephone: '034130859780',
-    type: 'Grundschule');
+    type: 'Grundschule',
+    highlighted: true,
+);

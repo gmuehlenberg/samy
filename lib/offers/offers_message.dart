@@ -10,6 +10,12 @@ class AddOffer extends OffersMessage {}
 
 class PlatzhalterMessage extends OffersMessage {}
 
+class OfferSelectedFromList extends OffersMessage {
+  OfferSelectedFromList(this.offer);
+
+  final Offer offer;
+}
+
 class SchoolSelectedFromMap extends OffersMessage {
   SchoolSelectedFromMap(this.selectedSchool);
 

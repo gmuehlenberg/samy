@@ -20,7 +20,7 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
           title: const Text(
             'SAMY',
           ),
-          backgroundColor: Colors.greenAccent,
+          backgroundColor: Colors.blue,
           actions: [
             IconButton(
               icon: const Icon(Icons.table_rows),
