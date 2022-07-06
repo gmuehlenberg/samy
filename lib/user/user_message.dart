@@ -12,6 +12,12 @@ class CreateUser extends UserMessage {
   final User user;
 }
 
+class ExchangeLoggedInUser extends UserMessage {
+  ExchangeLoggedInUser(this.user);
+
+  final User user;
+}
+
 class ChangeUser extends UserMessage {}
 
 class UpdateUserInfo extends UserMessage {
