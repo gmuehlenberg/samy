@@ -180,6 +180,7 @@ Offer initialOffer = Offer(
   creationTime: DateTime.now(),
 );
 
+
 // initialOffersModel is used as placeholder during development time
 final OffersModel initialOffersModel = OffersModel(
   offersList: [initialOffer, initialOffer, initialOffer, initialOffer],
@@ -195,4 +196,4 @@ School schuleAmAddisAbebaPlatz = School(
     district: 'Zentrum-Südost',
     position: LatLng(51.333871, 12.379632),
     telephone: '034130859780',
-    type: 'Grundschule');
+    type: 'Grundschule',);
