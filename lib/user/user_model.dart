@@ -51,7 +51,7 @@ class User {
   factory User.fromJSON(Map<String, dynamic> data) {
     // note the explicit cast to String
     // this is required if robust lint rules are enabled
-    final id = data['id'] as Option<String>;
+    final id = optionOf(data['id'] as String);
     final surname = data['surname'] as String;
     final lastname = data['lastname'] as String;
     final street = data['street'] as String;

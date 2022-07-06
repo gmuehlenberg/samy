@@ -18,8 +18,8 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
   Widget buildView(NavigationModel model) => Scaffold(
         key: scaffoldKey,
         appBar: AppBar(
-          title: const Text(
-            'SAMY',
+          title: Text(
+            model.page.name
           ),
           backgroundColor: Colors.blue,
           actions: [
