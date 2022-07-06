@@ -37,7 +37,7 @@ class OffersView extends View<OffersMessage, OffersModel, OffersUpdate> {
                           height: 300,
                           builder: (context) => Icon(
                             Icons.location_on_sharp,
-                            color: schuleAmAddisAbebaPlatz.highlighted ? Colors.blue : Colors.black,
+                            // color: schuleAmAddisAbebaPlatz.highlighted ? Colors.blue : Colors.black,
                             size: 40,
                           ),
                         ),

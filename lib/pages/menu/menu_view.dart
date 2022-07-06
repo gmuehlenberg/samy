@@ -49,7 +49,6 @@ class MenuView extends ViewWithoutModel {
             _button('User', const Icon(Icons.supervised_user_circle), Page.user),
             _button('Create Offer', const Icon(Icons.note_add), Page.offers_create),
             _button('View Offers', const Icon(Icons.school), Page.offers),
-
           ],
         ),
       );

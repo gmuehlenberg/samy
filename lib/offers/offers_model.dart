@@ -1,4 +1,6 @@
+import 'package:bloc_mvu_app/offers/offers_message.dart';
 import 'package:bloc_mvu_app/user/user_model.dart';
+import '../mvu/messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
 
@@ -24,8 +26,8 @@ class Offer {
     required this.school,
     required this.schoolClass,
     required this.firstSchoolDay,
-    required this.creationTime,
-    required this.highlighted, // must be handed over as DateTime.now() when class is instantiated
+    required this.creationTime, // must be handed over as DateTime.now() when class is instantiated
+    required this.highlighted,
   });
 
   final User offeror;
@@ -35,13 +37,13 @@ class Offer {
   final bool highlighted;
 
   Offer toggleHighlight() => Offer(
-    offeror: offeror,
-    school: school,
-    schoolClass: schoolClass,
-    firstSchoolDay: firstSchoolDay,
-    creationTime: creationTime,
-    highlighted: !highlighted,
-  );
+        offeror: offeror,
+        school: school,
+        schoolClass: schoolClass,
+        firstSchoolDay: firstSchoolDay,
+        creationTime: creationTime,
+        highlighted: !highlighted,
+      );
 
   int timeSinceCreation() {
     final now = DateTime.now();
@@ -65,80 +67,69 @@ class School {
 
   final String name, street, streetNumber, postCode, city, district, telephone, type, picture;
   final LatLng position;
-  final bool highlighted;
-
-  School toggleHighlight() => School(
-    name: name,
-    street: street,
-    streetNumber: streetNumber,
-    postCode: postCode,
-    city: city,
-    district: district,
-    position: position,
-    telephone: telephone,
-    type: type,
-    highlighted: !highlighted,
-  );
 }
 
 // offerComponent() is required to build list items for ListView.builder in offers_view.dart
 Widget offerComponent({required Offer offer}) => InkWell(
-  child: Container(
-      padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.only(bottom: 15),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: offer.highlighted ? Colors.blue : Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color: offer.highlighted ? Colors.black.withOpacity(1) : Colors.grey.withOpacity(0.2),
-            blurRadius: 2,
-            offset: const Offset(0, 1),
-          ),
-        ],
-      ),
-      child: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Expanded(
-                child: Row(
-                  children: [
-                    SizedBox(
-                      width: 60,
-                      height: 60,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(offer.school.picture),
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        margin: const EdgeInsets.only(bottom: 15),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: offer.highlighted ? Colors.blue : Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: offer.highlighted ? Colors.black.withOpacity(1) : Colors.grey.withOpacity(0.2),
+              blurRadius: 2,
+              offset: const Offset(0, 1),
+            ),
+          ],
+        ),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 60,
+                        height: 60,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(offer.school.picture),
+                        ),
                       ),
-                    ),
-                    const SizedBox(width: 10),
-                    Flexible(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            offer.school.name,
-                            style: TextStyle(
+                      const SizedBox(width: 10),
+                      Flexible(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              offer.school.name,
+                              style: TextStyle(
                                 color: offer.highlighted ? Colors.white : Colors.black,
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,
+                              ),
                             ),
-                          ),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          Text(offer.school.district,
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              offer.school.district,
                               style: TextStyle(
-                                  color: offer.highlighted ? Colors.white : Colors.grey[700],),),
-                        ],
-                      ),
-                    )
-                  ],
+                                color: offer.highlighted ? Colors.white : Colors.grey[700],
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-              ),
-              /*GestureDetector(
+                /*GestureDetector(
               onTap: () {
                 setState(() {
                   job.isMyFav = !job.isMyFav;
@@ -157,58 +148,55 @@ Widget offerComponent({required Offer offer}) => InkWell(
                   )
               ),
             )*/
-            ],
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      color: Colors.grey.shade200,
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.grey.shade200,
+                      ),
+                      child: Text(
+                        offer.schoolClass,
+                        style: const TextStyle(color: Colors.black),
+                      ),
                     ),
-                    child: Text(
-                      offer.schoolClass,
-                      style: const TextStyle(color: Colors.black),
+                    const SizedBox(
+                      width: 10,
                     ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      color: Colors.grey.shade200,
-                    ),
-                    child: Text(
-                      offer.firstSchoolDay,
-                      style: const TextStyle(color: Colors.black),
-                    ),
-                  )
-                ],
-              ),
-              Text(
-                '${offer.timeSinceCreation()} minutes ago',
-                style: TextStyle(
-                    color: offer.highlighted ? Colors.white : Colors.grey.shade800,
-                    fontSize: 12
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.grey.shade200,
+                      ),
+                      child: Text(
+                        offer.firstSchoolDay,
+                        style: const TextStyle(color: Colors.black),
+                      ),
+                    )
+                  ],
                 ),
-              )
-            ],
-          )
-        ],
+                Text(
+                  '${offer.timeSinceCreation()} minutes ago',
+                  style: TextStyle(color: offer.highlighted ? Colors.white : Colors.grey.shade800, fontSize: 12),
+                )
+              ],
+            )
+          ],
+        ),
       ),
-    ),
-    onTap: () {
-      dispatch(OfferSelectedFromList(offer));
-    },
+      onTap: () {
+        dispatch(OfferSelectedFromList(offer));
+      },
     );
 
 // initialOffer is used as placeholder during development time
@@ -218,11 +206,12 @@ Offer initialOffer = Offer(
   schoolClass: '1. Klasse',
   firstSchoolDay: '01.09.2022',
   creationTime: DateTime.now(),
+  highlighted: false,
 );
 
 Offer initialOffer2 = Offer(
   offeror: initialUser,
-  school: schuleAmAddisAbebaPlatz,
+  school: grundschuleBernhardGoeringStrasse,
   schoolClass: '2. Klasse',
   firstSchoolDay: '10.09.2022',
   creationTime: DateTime.now(),
@@ -245,9 +234,6 @@ School schuleAmAddisAbebaPlatz = School(
     position: LatLng(51.333871, 12.379632),
     telephone: '034130859780',
     type: 'Grundschule',
-    highlighted: true,
-);
-    type: 'Grundschule',
     picture: 'assets/pic_schuleAmAddisAbebaPlatz.jpg');
 
 School schuleAmFlossplatz = School(
@@ -269,7 +255,7 @@ School grundschuleWilhelmBusch = School(
     postCode: '04317',
     city: 'Leipzig',
     district: 'Detroitnitz',
-    position: LatLng(51.3360745,12.4005866),
+    position: LatLng(51.3360745, 12.4005866),
     telephone: '03416493325',
     type: 'Grundschule',
     picture: 'assets/pic_grundschuleWilhelmBusch.jpg');
@@ -281,7 +267,7 @@ School pabloNerudaSchule = School(
     postCode: '04103',
     city: 'Leipzig',
     district: 'Zentrum-Südost',
-    position: LatLng(51.3258315,12.384723),
+    position: LatLng(51.3258315, 12.384723),
     telephone: '03411245890',
     type: 'Grundschule',
     picture: 'assets/pic_pabloNerudaSchule.jpg');
@@ -293,7 +279,7 @@ School fritzBaumgartenSchule = School(
     postCode: '04317',
     city: 'Leipzig',
     district: 'Thonberg',
-    position: LatLng(51.3265687,12.4022076),
+    position: LatLng(51.3265687, 12.4022076),
     telephone: '03412308980',
     type: 'Grundschule',
     picture: 'assets/pic_fritzBaumgartenSchule.jpg');
@@ -305,7 +291,7 @@ School grundschuleBernhardGoeringStrasse = School(
     postCode: '04275',
     city: 'Leipzig',
     district: 'Südvorstadt',
-    position: LatLng(51.3182725,12.3768613),
+    position: LatLng(51.3182725, 12.3768613),
     telephone: '034122537200',
     type: 'Grundschule',
     picture: 'assets/pic_grundschuleBernhardGoeringStrasse.jpg');
@@ -317,7 +303,7 @@ School grundschuleThomanum = School(
     postCode: '04109',
     city: 'Leipzig',
     district: 'Zentrum-West',
-    position: LatLng(51.3366427,12.3613236),
+    position: LatLng(51.3366427, 12.3613236),
     telephone: '034197434421',
     type: 'Grundschule',
     picture: 'assets/pic_grundschuleThomanum.jpg');
