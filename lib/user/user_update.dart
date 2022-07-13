@@ -64,4 +64,4 @@ class UserUpdate extends Update<UserMessage, UserModel> {
 
     return User.fromJSON(jsonDecode(response.body) as Map<String, dynamic>); // data noch editieren!
   }
-}}
+}
