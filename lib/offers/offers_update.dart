@@ -13,9 +13,24 @@ class OffersUpdate extends Update<OffersMessage, OffersModel> {
   @override
   Option<OffersModel> processMessage(OffersMessage message, OffersModel model) {
     if (message is AddOffer) {
-      // return Some(model.copyWith(/*hier gehen neue Argumente rein */));
+      return const None();
     }
-    if (message is SchoolSelectedFromMap) {}
+    if (message is PlatzhalterMessage) {
+      return const None();
+    }
+    if (message is SchoolSelectedFromMap) {
+      final relatedOffers = <Offer>[];
+      var i = 0;
+
+      while (i < model.offersList.length) {
+        final currentOffer = model.offersList[i];
+        if (currentOffer.school.name == message.selectedSchool.name) {
+          relatedOffers.add(currentOffer);
+        }
+        i++;
+      }
+      return Some(model.copyWith(relatedOffers));
+    }
     return const None();
   }
 }
