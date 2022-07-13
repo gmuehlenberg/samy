@@ -218,6 +218,7 @@ Offer initialOffer2 = Offer(
   highlighted: false,
 );
 
+
 // initialOffersModel is used as placeholder during development time
 final OffersModel initialOffersModel = OffersModel(
   offersList: [initialOffer, initialOffer, initialOffer, initialOffer2],
@@ -307,3 +308,4 @@ School grundschuleThomanum = School(
     telephone: '034197434421',
     type: 'Grundschule',
     picture: 'assets/pic_grundschuleThomanum.jpg');
+
