@@ -4,6 +4,7 @@ import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
 import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/offers/offers_view.dart';
+import 'package:bloc_mvu_app/offers_create/offers_create_view.dart';
 import 'package:bloc_mvu_app/pages/menu/menu_view.dart';
 import 'package:bloc_mvu_app/sign_in/sign_in_view.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_view.dart';
@@ -17,10 +18,10 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
   Widget buildView(NavigationModel model) => Scaffold(
         key: scaffoldKey,
         appBar: AppBar(
-          title: const Text(
-            'SAMY',
+          title: Text(
+            model.page.name
           ),
-          backgroundColor: Colors.greenAccent,
+          backgroundColor: Colors.blue,
           actions: [
             IconButton(
               icon: const Icon(Icons.table_rows),
@@ -48,5 +49,7 @@ Widget widgetFor(Page page) {
       return const SignUpView();
     case Page.offers:
       return const OffersView();
+    case Page.offers_create:
+      return const OffersCreateView();
   }
 }

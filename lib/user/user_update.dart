@@ -2,6 +2,7 @@
 
 import 'dart:convert';
 
+import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/update.dart';
 import 'package:bloc_mvu_app/user/user_message.dart';
 import 'package:bloc_mvu_app/user/user_model.dart';
@@ -18,11 +19,17 @@ class UserUpdate extends Update<UserMessage, UserModel> {
   @override
   Option<UserModel> processMessage(UserMessage message, UserModel model) {
     if (message is CreateUser) {
-      // TODO: Hier müssen wir mal noch ran, so dass der neue User, der von addUserToBackend angelegt wird, auch in das UserModel übernommen wird und im Userview angezeigt wird.
-      final newUser = addUserToBackend(message.user) as User;
-      return Some(model.copyWith(some(newUser)));
+      addUserToBackend(message.user)
+          .then((user) => dispatch(ExchangeLoggedInUser(user)))
+          .catchError((dynamic error) {
+        print('Error: $error');
+      });
+      return const None();
     }
 
+    if (message is ExchangeLoggedInUser) {
+      return Some(model.copyWith(Some(message.user)));
+    }
     /*if (message is UpdateUserInfo) {
       return Some(model.copyWith());
     }*/

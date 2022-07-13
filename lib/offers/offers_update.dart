@@ -15,9 +15,7 @@ class OffersUpdate extends Update<OffersMessage, OffersModel> {
     if (message is AddOffer) {
       return const None();
     }
-    if (message is PlatzhalterMessage) {
-      return const None();
-    }
+    
     if (message is SchoolSelectedFromMap) {
       final relatedOffers = <Offer>[];
       var i = 0;
@@ -31,6 +29,13 @@ class OffersUpdate extends Update<OffersMessage, OffersModel> {
       }
       return Some(model.copyWith(relatedOffers));
     }
+
+    if (message is OfferSelectedFromList) {
+      final index = model.offersList.indexWhere((offer) => offer == message.offer);
+      model.offersList.replaceRange(index, index + 1, [message.offer.toggleHighlight()]);
+      return Some(model.copyWith(model.offersList));
+    }
+
     return const None();
   }
 }

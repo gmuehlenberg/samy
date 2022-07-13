@@ -35,8 +35,9 @@ class OffersView extends View<OffersMessage, OffersModel, OffersUpdate> {
                           point: LatLng(51.337581, 12.378849),
                           width: 300,
                           height: 300,
-                          builder: (context) => const Icon(
+                          builder: (context) => Icon(
                             Icons.location_on_sharp,
+                            // color: schuleAmAddisAbebaPlatz.highlighted ? Colors.blue : Colors.black,
                             size: 40,
                           ),
                         ),

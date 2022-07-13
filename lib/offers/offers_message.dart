@@ -6,6 +6,12 @@ abstract class OffersMessage extends UpdateMessage {
   OffersMessage() : super(routeTo: OffersUpdate);
 }
 
+class OfferSelectedFromList extends OffersMessage {
+  OfferSelectedFromList(this.offer);
+
+  final Offer offer;
+}
+
 class SchoolSelectedFromMap extends OffersMessage {
   SchoolSelectedFromMap(this.selectedSchool);
 
@@ -14,4 +20,3 @@ class SchoolSelectedFromMap extends OffersMessage {
 
 class AddOffer extends OffersMessage {}
 
-class PlatzhalterMessage extends OffersMessage {}
