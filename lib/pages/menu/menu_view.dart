@@ -2,6 +2,7 @@ import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/view_without_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
 import 'package:bloc_mvu_app/navigation/navigation_model.dart';
+import 'package:bloc_mvu_app/user/panel_view.dart';
 import 'package:flutter/material.dart' hide Page;
 
 Widget _button(String title, Icon icon, Page target) => ListTile(
@@ -22,26 +23,8 @@ class MenuView extends ViewWithoutModel {
           // Remove padding
           padding: EdgeInsets.zero,
           children: [
-            UserAccountsDrawerHeader(
-              accountName: const Text('Vorname Nachname'),
-              accountEmail: const Text('example@gmail.com'),
-              currentAccountPicture: CircleAvatar(
-                child: ClipOval(
-                  child: Image.network(
-                    'https://oflutter.com/wp-content/uploads/2021/02/girl-profile.png',
-                    fit: BoxFit.cover,
-                    width: 90,
-                    height: 90,
-                  ),
-                ),
-              ),
-              decoration: const BoxDecoration(
-                color: Colors.blue,
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: NetworkImage('https://oflutter.com/wp-content/uploads/2021/02/profile-bg3.jpg'),
-                ),
-              ),
+            UserPanelView(
+
             ),
             _button('SignUp', const Icon(Icons.login), Page.signUp),
             _button('SignIn', const Icon(Icons.app_registration), Page.signIn),
