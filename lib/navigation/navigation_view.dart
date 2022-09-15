@@ -20,7 +20,7 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
         appBar: AppBar(
           title: Text(
             model.page.name
-          ),
+          ,),
           backgroundColor: Colors.blue,
           actions: [
             IconButton(

@@ -12,6 +12,8 @@ class OfferSelectedFromList extends OffersMessage {
   final Offer offer;
 }
 
+class GetAllOffers extends OffersMessage {}
+
 class SchoolSelectedFromMap extends OffersMessage {
   SchoolSelectedFromMap(this.selectedSchool);
 
@@ -19,4 +21,3 @@ class SchoolSelectedFromMap extends OffersMessage {
 }
 
 class AddOffer extends OffersMessage {}
-

@@ -17,25 +17,18 @@ class OffersUpdate extends Update<OffersMessage, OffersModel> {
     }
     
     if (message is SchoolSelectedFromMap) {
-      final relatedOffers = <Offer>[];
-      var i = 0;
-
-      while (i < model.offersList.length) {
-        final currentOffer = model.offersList[i];
-        if (currentOffer.school.name == message.selectedSchool.name) {
-          relatedOffers.add(currentOffer);
-        }
-        i++;
-      }
-      return Some(model.copyWith(relatedOffers));
+      return Some(model.copyWith(selectedSchool: Some(message.selectedSchool)));
     }
 
     if (message is OfferSelectedFromList) {
       final index = model.offersList.indexWhere((offer) => offer == message.offer);
       model.offersList.replaceRange(index, index + 1, [message.offer.toggleHighlight()]);
-      return Some(model.copyWith(model.offersList));
+      return Some(model.copyWith(newList: model.offersList));
     }
 
+    if (message is GetAllOffers) {
+      return Some(model.copyWith(newList: model.offersList));
+    }
     return const None();
   }
 }

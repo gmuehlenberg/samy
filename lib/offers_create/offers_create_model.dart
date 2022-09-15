@@ -1,3 +1,5 @@
+//Not yet implemented
+
 class OffersCreateModel {
   OffersCreateModel({
     required this.sampleVariable,
@@ -9,7 +11,7 @@ class OffersCreateModel {
     bool? obscurePassword,
   }) =>
       OffersCreateModel(
-        sampleVariable: sampleVariable ?? this.sampleVariable,
+        sampleVariable: sampleVariable,
       );
 }
 

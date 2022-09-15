@@ -1,5 +1,3 @@
-// ignore_for_file: unnecessary_cast
-
 import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/user/user_message.dart';
 import 'package:bloc_mvu_app/user/user_model.dart';

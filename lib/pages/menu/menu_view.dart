@@ -23,7 +23,7 @@ class MenuView extends ViewWithoutModel {
           // Remove padding
           padding: EdgeInsets.zero,
           children: [
-            UserPanelView(
+            const UserPanelView(
 
             ),
             _button('SignUp', const Icon(Icons.login), Page.signUp),

@@ -1,22 +1,32 @@
+import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/offers/offers_message.dart';
 import 'package:bloc_mvu_app/user/user_model.dart';
-import '../mvu/messaging.dart';
+import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
 
 class OffersModel {
   OffersModel({
     required this.offersList,
+    required this.selectedSchool,
+    required this.selectedOffer,
   });
 
   List<Offer> offersList;
+  Option<Offer> selectedOffer;
+  Option<School> selectedSchool;
 
-  OffersModel copyWith(
+  OffersModel copyWith({
     List<Offer>? newList,
-  ) =>
+    Option<Offer>? selectedOffer,
+    Option<School>? selectedSchool,
+  }) =>
       OffersModel(
         offersList: newList ?? offersList,
+        selectedOffer: selectedOffer ?? this.selectedOffer,
+        selectedSchool: selectedSchool ?? this.selectedSchool,
       );
+
 }
 
 // class Offer represents an created offer with all its details
@@ -221,7 +231,9 @@ Offer initialOffer2 = Offer(
 
 // initialOffersModel is used as placeholder during development time
 final OffersModel initialOffersModel = OffersModel(
-  offersList: [initialOffer, initialOffer, initialOffer, initialOffer2],
+  offersList: [initialOffer, initialOffer, initialOffer2],
+  selectedOffer: none(),
+  selectedSchool: none(),
 );
 
 // List of sample schools in Leipzig with details
@@ -235,7 +247,7 @@ School schuleAmAddisAbebaPlatz = School(
     position: LatLng(51.333871, 12.379632),
     telephone: '034130859780',
     type: 'Grundschule',
-    picture: 'assets/pic_schuleAmAddisAbebaPlatz.jpg');
+    picture: 'assets/pic_schuleAmAddisAbebaPlatz.jpg',);
 
 School schuleAmFlossplatz = School(
     name: 'Schule am Floßplatz',
@@ -247,7 +259,7 @@ School schuleAmFlossplatz = School(
     position: LatLng(51.3296509, 12.3720827),
     telephone: '034126178680',
     type: 'Grundschule',
-    picture: 'assets/pic_schuleAmFlossplatz.jpg');
+    picture: 'assets/pic_schuleAmFlossplatz.jpg',);
 
 School grundschuleWilhelmBusch = School(
     name: 'Grundschule Wilhelm-Busch',
@@ -259,7 +271,7 @@ School grundschuleWilhelmBusch = School(
     position: LatLng(51.3360745, 12.4005866),
     telephone: '03416493325',
     type: 'Grundschule',
-    picture: 'assets/pic_grundschuleWilhelmBusch.jpg');
+    picture: 'assets/pic_grundschuleWilhelmBusch.jpg',);
 
 School pabloNerudaSchule = School(
     name: 'Pablo-Neruda-Schule',
@@ -271,8 +283,9 @@ School pabloNerudaSchule = School(
     position: LatLng(51.3258315, 12.384723),
     telephone: '03411245890',
     type: 'Grundschule',
-    picture: 'assets/pic_pabloNerudaSchule.jpg');
+    picture: 'assets/pic_pabloNerudaSchule.jpg',);
 
+// ignore: require_trailing_commas
 School fritzBaumgartenSchule = School(
     name: 'Fritz-Baumgarten-Schule',
     street: 'Riebeckstraße',
@@ -283,11 +296,12 @@ School fritzBaumgartenSchule = School(
     position: LatLng(51.3265687, 12.4022076),
     telephone: '03412308980',
     type: 'Grundschule',
-    picture: 'assets/pic_fritzBaumgartenSchule.jpg');
+    picture: 'assets/pic_fritzBaumgartenSchule.jpg',);
 
 School grundschuleBernhardGoeringStrasse = School(
     name: 'Grundschule an der Bernhard-Göring-Straße',
-    street: 'Bernhard-Göring-Straße',
+    // ignore: require_trailing_commas
+street: 'Bernhard-Göring-Straße',
     streetNumber: '107',
     postCode: '04275',
     city: 'Leipzig',
@@ -295,8 +309,9 @@ School grundschuleBernhardGoeringStrasse = School(
     position: LatLng(51.3182725, 12.3768613),
     telephone: '034122537200',
     type: 'Grundschule',
-    picture: 'assets/pic_grundschuleBernhardGoeringStrasse.jpg');
+    picture: 'assets/pic_grundschuleBernhardGoeringStrasse.jpg',);
 
+// ignore: require_trailing_commas
 School grundschuleThomanum = School(
     name: 'Grundschule thomanum',
     street: 'Sebastian-Bach-Straße',
@@ -307,5 +322,4 @@ School grundschuleThomanum = School(
     position: LatLng(51.3366427, 12.3613236),
     telephone: '034197434421',
     type: 'Grundschule',
-    picture: 'assets/pic_grundschuleThomanum.jpg');
-
+    picture: 'assets/pic_grundschuleThomanum.jpg',);
