@@ -1,9 +1,11 @@
 import 'package:bloc_mvu_app/mvu/messaging.dart';
 import 'package:bloc_mvu_app/mvu/view.dart';
+import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
+import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/sign_in/sign_in_message.dart';
 import 'package:bloc_mvu_app/sign_in/sign_in_model.dart';
 import 'package:bloc_mvu_app/sign_in/sign_in_update.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Page;
 
 class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
   const SignInView({Key? key}) : super(key: key);
@@ -100,7 +102,9 @@ class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
                                           padding: const EdgeInsets.all(15),
                                           backgroundColor: Colors.blue[900],
                                         ),
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          dispatch(NavigateTo(Page.signUp));
+                                        },
                                         child: const Text(
                                           'Register now',
                                           style: TextStyle(color: Colors.white, fontSize: 18),

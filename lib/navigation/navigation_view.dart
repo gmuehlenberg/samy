@@ -11,6 +11,9 @@ import 'package:bloc_mvu_app/sign_up/sign_up_view.dart';
 import 'package:bloc_mvu_app/user/user_view.dart';
 import 'package:flutter/material.dart' hide Page;
 
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+
 class NavigationView extends View<NavigationMessage, NavigationModel, NavigationUpdate> {
   const NavigationView({Key? key}) : super(key: key);
 

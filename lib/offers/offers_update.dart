@@ -29,6 +29,7 @@ class OffersUpdate extends Update<OffersMessage, OffersModel> {
     if (message is GetAllOffers) {
       return Some(model.copyWith(newList: model.offersList));
     }
+
     return const None();
   }
 }
