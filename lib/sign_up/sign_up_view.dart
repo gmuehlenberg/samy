@@ -6,7 +6,7 @@ import 'package:bloc_mvu_app/sign_up/sign_up_update.dart';
 import 'package:bloc_mvu_app/user/user_message.dart';
 import 'package:bloc_mvu_app/user/user_model.dart';
 import 'package:dartz/dartz.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide View;
 
 class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
   const SignUpView({Key? key}) : super(key: key);

@@ -3,7 +3,7 @@ import 'package:bloc_mvu_app/mvu/view_without_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
 import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/user/panel_view.dart';
-import 'package:flutter/material.dart' hide Page;
+import 'package:flutter/material.dart' hide Page, View;
 
 Widget _button(String title, Icon icon, Page target) => ListTile(
       onTap: () {

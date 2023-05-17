@@ -3,16 +3,15 @@ import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/offers_create/create_offer_messages.dart';
 import 'package:bloc_mvu_app/offers_create/create_offer_model.dart';
 import 'package:bloc_mvu_app/offers_create/create_offer_update.dart';
-import 'package:bloc_mvu_app/sign_up/sign_up_message.dart';
-import 'package:bloc_mvu_app/sign_up/sign_up_model.dart';
-import 'package:bloc_mvu_app/sign_up/sign_up_update.dart';
-import 'package:bloc_mvu_app/user/user_message.dart';
-import 'package:bloc_mvu_app/user/user_model.dart';
-import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart' hide View;
 
+// ignore: must_be_immutable
 class CreateOfferView extends View<CreateOfferMessage, CreateOfferModel, CreateOfferUpdate> {
-  const CreateOfferView({Key? key}) : super(key: key);
+
+  CreateOfferView({Key? key}) : super(key: key);
+
+  SchoolType?_selectedSchooltype;
+  int? _selectedClassNo;
 
   @override
   Widget buildView(CreateOfferModel model) => Scaffold(
@@ -20,9 +19,6 @@ class CreateOfferView extends View<CreateOfferMessage, CreateOfferModel, CreateO
           child: Padding(
             padding: const EdgeInsets.all(20),
             child: ListView(
-              // slivers: [
-              //  SliverFillRemaining(
-              //  hasScrollBody: false,
               children: [
                 Text(
                   'Welcome to SAMY',
@@ -41,82 +37,26 @@ class CreateOfferView extends View<CreateOfferMessage, CreateOfferModel, CreateO
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    TextField(
-                      decoration: const InputDecoration(labelText: 'Schultyp', border: OutlineInputBorder()),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    TextField(
-                      decoration: const InputDecoration(labelText: 'Lastname', border: OutlineInputBorder()),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
                     Row(
                       children: <Widget>[
                         Expanded(
                           flex: 30,
-                          child: TextField(
-                            decoration: const InputDecoration(labelText: 'Street', border: OutlineInputBorder()),
-                            controller: model.streetController,
+                          child: DropdownButton<SchoolType>(
+                            items: SchoolType.values.map((type) => DropdownMenuItem(value: type, child: Text(type.name))).toList(),
+                            onChanged: (newItem) => _selectedSchooltype = newItem,
                           ),
                         ),
                         const SizedBox(
                           width: 10,
                         ),
                         Expanded(
-                          flex: 9,
-                          child: TextField(
-                            decoration: const InputDecoration(labelText: 'Streetnumber', border: OutlineInputBorder()),
-                            controller: model.streetNumberController,
+                          flex: 30,
+                          child: DropdownButton<int>(
+                            items: List<int>.generate(13, (i) => i + 1).map((no) => DropdownMenuItem(value: no, child: Text(no.toString()))).toList(),
+                            onChanged: (newNo) => _selectedClassNo = newNo,
                           ),
                         ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
                       ],
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    TextField(
-                      decoration: const InputDecoration(labelText: 'Postcode', border: OutlineInputBorder()),
-                      controller: model.postCodeController,
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    TextField(
-                      decoration: const InputDecoration(labelText: 'City', border: OutlineInputBorder()),
-                      controller: model.cityController,
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    TextField(
-                      decoration: const InputDecoration(labelText: 'E-Mail', border: OutlineInputBorder()),
-                      controller: model.mailController,
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    TextField(
-                      obscureText: model.obscurePassword,
-                      controller: model.passwordController,
-                      decoration: InputDecoration(
-                        labelText: 'Password',
-                        border: const OutlineInputBorder(),
-                        suffixIcon: IconButton(
-                          icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
-                          onPressed: () {
-                            dispatch(ChangePasswordVisibility());
-                          },
-                        ),
-                      ),
                     ),
                     const SizedBox(
                       height: 10,
@@ -137,11 +77,10 @@ class CreateOfferView extends View<CreateOfferMessage, CreateOfferModel, CreateO
                     onPressed: () {
                       dispatch(
                         CreateOffer(
-                          schoolType: schooltypeController.value,
-                          classNo: classNoController.value,
+                          schoolType: _selectedSchooltype!,
+                          classNo: _selectedClassNo!,
                           ),
-                        ),
-                      );
+                        );
                       // PopUp-Fenster anzeigen
                       // NavigateTo anderer Page
                     },

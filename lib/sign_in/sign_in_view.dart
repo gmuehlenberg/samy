@@ -5,7 +5,7 @@ import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/sign_in/sign_in_message.dart';
 import 'package:bloc_mvu_app/sign_in/sign_in_model.dart';
 import 'package:bloc_mvu_app/sign_in/sign_in_update.dart';
-import 'package:flutter/material.dart' hide Page;
+import 'package:flutter/material.dart' hide Page, View;
 
 class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
   const SignInView({Key? key}) : super(key: key);
