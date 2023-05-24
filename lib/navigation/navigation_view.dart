@@ -4,12 +4,12 @@ import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
 import 'package:bloc_mvu_app/navigation/navigation_model.dart';
 import 'package:bloc_mvu_app/navigation/navigation_update.dart';
 import 'package:bloc_mvu_app/offers/offers_view.dart';
-import 'package:bloc_mvu_app/offers_create/offers_create_view.dart';
+import 'package:bloc_mvu_app/offers_create/create_offer_view.dart';
 import 'package:bloc_mvu_app/pages/menu/menu_view.dart';
 import 'package:bloc_mvu_app/sign_in/sign_in_view.dart';
 import 'package:bloc_mvu_app/sign_up/sign_up_view.dart';
 import 'package:bloc_mvu_app/user/user_view.dart';
-import 'package:flutter/material.dart' hide Page;
+import 'package:flutter/material.dart' hide Page, View;
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
@@ -53,6 +53,6 @@ Widget widgetFor(Page page) {
     case Page.offers:
       return const OffersView();
     case Page.offers_create:
-      return const OffersCreateView();
+      return CreateOfferView();
   }
 }

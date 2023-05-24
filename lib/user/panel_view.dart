@@ -2,7 +2,7 @@ import 'package:bloc_mvu_app/mvu/view.dart';
 import 'package:bloc_mvu_app/user/user_message.dart';
 import 'package:bloc_mvu_app/user/user_model.dart';
 import 'package:bloc_mvu_app/user/user_update.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide View;
 
 class UserPanelView extends View<UserMessage, UserModel, UserUpdate> {
   const UserPanelView({Key? key}) : super(key: key);
