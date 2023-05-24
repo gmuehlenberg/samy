@@ -9,7 +9,7 @@ class UserPanelView extends View<UserMessage, UserModel, UserUpdate> {
 
   @override
   Widget buildView(UserModel model) => UserAccountsDrawerHeader(
-    accountName: Text(model.user.map((user) => '${user.surname} ${user.lastname}').getOrElse(() => '')),
+    accountName: Text(model.user.map((user) => '${user.firstName} ${user.lastName}').getOrElse(() => '')),
     accountEmail: Text(model.user.map((user) => user.mail).getOrElse(() => '')),
     currentAccountPicture: CircleAvatar(
       child: ClipOval(
@@ -32,4 +32,4 @@ class UserPanelView extends View<UserMessage, UserModel, UserUpdate> {
 }
 
 Widget userDetails(UserModel model) =>
-    model.user.map((user) => Text('Vorname: ${user.surname}')).getOrElse(() => const Text('Kein User ausgewählt'));
+    model.user.map((user) => Text('Vorname: ${user.firstName}')).getOrElse(() => const Text('Kein User ausgewählt'));

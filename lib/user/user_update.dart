@@ -44,14 +44,16 @@ class UserUpdate extends Update<UserMessage, UserModel> {
 
   Future<User> addUserToBackend(User user) async {
     final url = Uri.parse('https://samy-backend-ybaxbalfwa-ey.a.run.app/api/sign-up');
+    final localUrl = Uri.parse('http://localhost:3000/sign-up');
 
     final response = await http.post(
-      url,
-      headers: {'Content-Type': 'application/json', 'token': 'token123'},
+      localUrl,
+      headers: {'Content-Type': 'application/json', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDY0ZDhkN2M4ZTNkM2I1YzEyNjU2ZTciLCJpYXQiOjE2ODQzMzA3MTEsImV4cCI6MTY4NDQxNzExMX0.CyT913nzztrBH9fOaL3f3mzAz94qGKDzgFg6pMTmIPw'},
       body: json.encode({
-        'surname': user.surname,
-        'lastname': user.lastname,
+        'firstName': user.firstName,
+        'lastName': user.lastName,
         'street': user.street,
+        'streetNumber': user.streetNumber,
         'city': user.city,
         'mail': user.mail,
         'postCode': user.postCode,

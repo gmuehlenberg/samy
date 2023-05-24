@@ -19,8 +19,8 @@ class UserView extends View<UserMessage, UserModel, UserUpdate> {
                   (user) => ListView(
                     children: [
                       const Text('Nutzeransicht'),
-                      Text('Vorname: ${user.surname}'),
-                      Text('Nachname: ${user.lastname}'),
+                      Text('Vorname: ${user.firstName}'),
+                      Text('Nachname: ${user.lastName}'),
                       Text('Adresse: ${user.street} ${user.streetNumber}, ${user.postCode} ${user.city}'),
                       Text('Email: ${user.mail}'),
                       Text(user.id.getOrElse(() => 'Keine ID vergeben')),
@@ -42,4 +42,4 @@ class UserView extends View<UserMessage, UserModel, UserUpdate> {
 }
 
 Widget userDetails(UserModel model) =>
-    model.user.map((user) => Text('Vorname: ${user.surname}')).getOrElse(() => const Text('Kein User ausgewählt'));
+    model.user.map((user) => Text('Vorname: ${user.firstName}')).getOrElse(() => const Text('Kein User ausgewählt'));

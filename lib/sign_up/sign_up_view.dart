@@ -59,14 +59,14 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                   children: <Widget>[
                     TextField(
                       decoration: const InputDecoration(labelText: 'Surname', border: OutlineInputBorder()),
-                      controller: model.surnameController,
+                      controller: model.firstNameController,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     TextField(
                       decoration: const InputDecoration(labelText: 'Lastname', border: OutlineInputBorder()),
-                      controller: model.lastnameController,
+                      controller: model.lastNameController,
                     ),
                     const SizedBox(
                       height: 10,
@@ -152,8 +152,8 @@ class SignUpView extends View<SignUpMessage, SignUpModel, SignUpUpdate> {
                       dispatch(
                         CreateUser(
                           User(
-                            surname: model.surnameController.text,
-                            lastname: model.lastnameController.text,
+                            firstName: model.firstNameController.text,
+                            lastName: model.lastNameController.text,
                             street: model.streetController.text,
                             streetNumber: model.streetNumberController.text,
                             city: model.cityController.text,

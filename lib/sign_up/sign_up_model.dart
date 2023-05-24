@@ -7,8 +7,8 @@ class SignUpModel {
 
   final bool obscurePassword;
 
-  TextEditingController surnameController = TextEditingController();
-  TextEditingController lastnameController = TextEditingController();
+  TextEditingController firstNameController = TextEditingController();
+  TextEditingController lastNameController = TextEditingController();
   TextEditingController streetController = TextEditingController();
   TextEditingController streetNumberController = TextEditingController();
   TextEditingController postCodeController = TextEditingController();

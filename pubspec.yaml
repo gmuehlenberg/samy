@@ -26,7 +26,6 @@ dev_dependencies:
   integration_test:
     sdk: flutter
   msix: ^2.8.1
-  very_good_analysis: ^2.4.0
 
 flutter:
   uses-material-design: true

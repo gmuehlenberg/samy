@@ -14,7 +14,7 @@ class CreateOfferUpdate extends Update<CreateOfferMessage, CreateOfferModel> {
   // ignore: avoid_renaming_method_parameters
   Option<CreateOfferModel> processMessage(CreateOfferMessage msg, CreateOfferModel model) {
     if (msg is CreateOffer) {
-      return Some(model.copyWith(schoolType: msg.schoolType, classNo: msg.classNo));
+      return Some(model.copyWith());
     }
     return const None();
   }

@@ -19,7 +19,7 @@ class SignUpUpdate extends Update<SignUpMessage, SignUpModel> {
       //Frage: Wie UserModel kopieren??
       //Antwort: UserModel userModel = UserModel.get();
 
-      model.surnameController.text;
+      model.firstNameController.text;
     }
     return const None();
   }

@@ -37,8 +37,8 @@ class UserModel {
 
 class User {
   User({
-    required this.surname,
-    required this.lastname,
+    required this.firstName,
+    required this.lastName,
     required this.street,
     required this.streetNumber,
     required this.city,
@@ -53,9 +53,9 @@ class User {
   factory User.fromJSON(Map<String, dynamic> data) {
     // note the explicit cast to String
     // this is required if robust lint rules are enabled
-    final id = optionOf(data['id'] as String);
-    final surname = data['surname'] as String;
-    final lastname = data['lastname'] as String;
+    final id = optionOf(data['_id'] as String);
+    final firstName = data['firstName'] as String;
+    final lastName = data['lastName'] as String;
     final street = data['street'] as String;
     final streetNumber = data['street'] as String;
     final postCode = data['postCode'] as String;
@@ -65,8 +65,8 @@ class User {
 
     return User(
       id: id,
-      surname: surname,
-      lastname: lastname,
+      firstName: firstName,
+      lastName: lastName,
       street: street,
       streetNumber: streetNumber,
       postCode: postCode,
@@ -77,15 +77,15 @@ class User {
     );
   }
 
-  final String surname, lastname, street, streetNumber, postCode, city, mail, password, image;
+  final String firstName, lastName, street, streetNumber, postCode, city, mail, password, image;
   final Option<String> id; // ID is set after initial user instantiation once API response arrived
 
 }
 
 // TODO: initialUser rauslöschen, sobald Login funktioniert.
 final User initialUser = User(
-  surname: 'Olive',
-  lastname: 'Tree',
+  firstName: 'Olive',
+  lastName: 'Tree',
   street: 'Karl-Liebknecht-Straße',
   streetNumber: '38',
   city: 'Leipzig',
