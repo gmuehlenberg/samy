@@ -4,7 +4,6 @@ import 'package:bloc_mvu_app/offers_create/create_offer_messages.dart';
 import 'package:bloc_mvu_app/offers_create/create_offer_model.dart';
 import 'package:bloc_mvu_app/offers_create/create_offer_update.dart';
 import 'package:flutter/material.dart' hide View;
-import 'package:dropdown_search/dropdown_search.dart';
 
 // ignore: must_be_immutable
 class CreateOfferView extends View<CreateOfferMessage, CreateOfferModel, CreateOfferUpdate> {
