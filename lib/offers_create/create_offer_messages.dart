@@ -7,8 +7,9 @@ abstract class CreateOfferMessage extends UpdateMessage {
 }
 
 class CreateOffer extends CreateOfferMessage {
-  CreateOffer({required this.schoolType, required this.classNo});
+  CreateOffer({required this.schoolType, required this.classNo, required this.schoolName});
 
   final SchoolType schoolType;
   final int classNo;
+  final SchoolName schoolName;
 }
