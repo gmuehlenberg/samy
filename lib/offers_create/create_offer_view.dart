@@ -4,6 +4,7 @@ import 'package:bloc_mvu_app/offers_create/create_offer_messages.dart';
 import 'package:bloc_mvu_app/offers_create/create_offer_model.dart';
 import 'package:bloc_mvu_app/offers_create/create_offer_update.dart';
 import 'package:flutter/material.dart' hide View;
+import 'package:dropdown_search/dropdown_search.dart';
 
 // ignore: must_be_immutable
 class CreateOfferView extends View<CreateOfferMessage, CreateOfferModel, CreateOfferUpdate> {
@@ -33,6 +34,7 @@ class CreateOffersFormState extends State<CreateOffersForm> {
 
   SchoolType selectedSchooltype = SchoolType.Grundschule;
   int selectedClassNo = 1;
+  SchoolName selectedSchoolname = SchoolName.Schule1;
 
   @override
   Widget build(BuildContext context) => Column(
@@ -47,6 +49,16 @@ class CreateOffersFormState extends State<CreateOffersForm> {
                     selectedSchooltype = newItem!;
                   }),
                   value: selectedSchooltype,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(30),
+                child: DropdownButton<SchoolName>(
+                  items: SchoolName.values.map((type) => DropdownMenuItem(value: type, child: Text(type.name))).toList(),
+                  onChanged: (newName) => setState(() {
+                    selectedSchoolname = newName!;
+                  }),
+                  value: selectedSchoolname,
                 ),
               ),
               Padding(
@@ -76,6 +88,7 @@ class CreateOffersFormState extends State<CreateOffersForm> {
                   CreateOffer(
                     schoolType: selectedSchooltype,
                     classNo: selectedClassNo,
+                    schoolName: selectedSchoolname,
                   ),
                 );
               },
