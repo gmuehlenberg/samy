@@ -1,17 +1,17 @@
-import 'package:bloc_mvu_app/config/config_update.dart';
-import 'package:bloc_mvu_app/navigation/navigation_update.dart';
-import 'package:bloc_mvu_app/navigation/navigation_view.dart';
-import 'package:bloc_mvu_app/offers/offers_update.dart';
-import 'package:bloc_mvu_app/offers_create/create_offer_update.dart';
-import 'package:bloc_mvu_app/sign_in/sign_in_update.dart';
-import 'package:bloc_mvu_app/sign_up/sign_up_update.dart';
-import 'package:bloc_mvu_app/user/user_update.dart';
+import 'package:samy_app/config/config_update.dart';
+import 'package:samy_app/navigation/navigation_update.dart';
+import 'package:samy_app/navigation/navigation_view.dart';
+import 'package:samy_app/offers/offers_update.dart';
+import 'package:samy_app/offers_create/create_offer_update.dart';
+import 'package:samy_app/sign_in/sign_in_update.dart';
+import 'package:samy_app/sign_up/sign_up_update.dart';
+import 'package:samy_app/user/user_update.dart';
 import 'package:flutter/material.dart' hide View;
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 /// Entry widget
-class BlocMvuTestApp extends StatelessWidget {
-  const BlocMvuTestApp({Key? key}) : super(key: key);
+class SamyApp extends StatelessWidget {
+  const SamyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) => MultiBlocProvider(
@@ -33,5 +33,5 @@ class BlocMvuTestApp extends StatelessWidget {
 }
 
 void main() {
-  runApp(const BlocMvuTestApp());
+  runApp(const SamyApp());
 }

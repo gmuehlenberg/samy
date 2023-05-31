@@ -1,8 +1,8 @@
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/mvu/view.dart';
-import 'package:bloc_mvu_app/offers_create/create_offer_messages.dart';
-import 'package:bloc_mvu_app/offers_create/create_offer_model.dart';
-import 'package:bloc_mvu_app/offers_create/create_offer_update.dart';
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/mvu/view.dart';
+import 'package:samy_app/offers_create/create_offer_messages.dart';
+import 'package:samy_app/offers_create/create_offer_model.dart';
+import 'package:samy_app/offers_create/create_offer_update.dart';
 import 'package:flutter/material.dart' hide View;
 
 // ignore: must_be_immutable

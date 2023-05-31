@@ -1,10 +1,10 @@
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/mvu/view.dart';
-import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
-import 'package:bloc_mvu_app/navigation/navigation_model.dart';
-import 'package:bloc_mvu_app/sign_in/sign_in_message.dart';
-import 'package:bloc_mvu_app/sign_in/sign_in_model.dart';
-import 'package:bloc_mvu_app/sign_in/sign_in_update.dart';
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/mvu/view.dart';
+import 'package:samy_app/navigation/navigation_messages.dart';
+import 'package:samy_app/navigation/navigation_model.dart';
+import 'package:samy_app/sign_in/sign_in_message.dart';
+import 'package:samy_app/sign_in/sign_in_model.dart';
+import 'package:samy_app/sign_in/sign_in_update.dart';
 import 'package:flutter/material.dart' hide Page, View;
 
 class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {

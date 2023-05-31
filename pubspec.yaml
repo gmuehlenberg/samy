@@ -1,5 +1,5 @@
-name: bloc_mvu_app
-description: App to kickstart with BLoC & MVU in flutter
+name: samy_app
+description: Swap app for my youngster's place
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 

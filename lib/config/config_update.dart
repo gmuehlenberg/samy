@@ -1,6 +1,6 @@
-import 'package:bloc_mvu_app/config/config_messages.dart';
-import 'package:bloc_mvu_app/config/config_model.dart';
-import 'package:bloc_mvu_app/mvu/update.dart';
+import 'package:samy_app/config/config_messages.dart';
+import 'package:samy_app/config/config_model.dart';
+import 'package:samy_app/mvu/update.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 

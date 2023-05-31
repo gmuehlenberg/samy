@@ -1,6 +1,6 @@
-import 'package:bloc_mvu_app/mvu/update.dart';
-import 'package:bloc_mvu_app/sign_up/sign_up_message.dart';
-import 'package:bloc_mvu_app/sign_up/sign_up_model.dart';
+import 'package:samy_app/mvu/update.dart';
+import 'package:samy_app/sign_up/sign_up_message.dart';
+import 'package:samy_app/sign_up/sign_up_model.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 

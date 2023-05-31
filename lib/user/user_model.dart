@@ -3,8 +3,8 @@
 // ignore: flutter_style_todos
 // ignore: flutter_style_todos
 // ignore: flutter_style_todos
-import 'package:bloc_mvu_app/mvu/update.dart';
-import 'package:bloc_mvu_app/user/user_update.dart';
+import 'package:samy_app/mvu/update.dart';
+import 'package:samy_app/user/user_update.dart';
 import 'package:dartz/dartz.dart';
 
 class UserModel {

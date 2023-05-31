@@ -1,6 +1,6 @@
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/offers_create/create_offer_model.dart';
-import 'package:bloc_mvu_app/offers_create/create_offer_update.dart';
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/offers_create/create_offer_model.dart';
+import 'package:samy_app/offers_create/create_offer_update.dart';
 
 abstract class CreateOfferMessage extends UpdateMessage {
   CreateOfferMessage() : super(routeTo: CreateOfferUpdate);

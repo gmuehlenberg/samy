@@ -5,14 +5,14 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:bloc_mvu_app/main.dart';
+import 'package:samy_app/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const BlocMvuTestApp());
+    await tester.pumpWidget(const SamyApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('Count: 0'), findsOneWidget);

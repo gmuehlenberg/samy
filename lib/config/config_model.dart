@@ -1,5 +1,5 @@
-import 'package:bloc_mvu_app/config/config_update.dart';
-import 'package:bloc_mvu_app/mvu/update.dart';
+import 'package:samy_app/config/config_update.dart';
+import 'package:samy_app/mvu/update.dart';
 
 const String dev = 'DEV';
 const String stage = 'STAGE';

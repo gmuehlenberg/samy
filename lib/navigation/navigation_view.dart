@@ -1,18 +1,20 @@
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/mvu/view.dart';
-import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
-import 'package:bloc_mvu_app/navigation/navigation_model.dart';
-import 'package:bloc_mvu_app/navigation/navigation_update.dart';
-import 'package:bloc_mvu_app/offers/offers_view.dart';
-import 'package:bloc_mvu_app/offers_create/create_offer_view.dart';
-import 'package:bloc_mvu_app/pages/menu/menu_view.dart';
-import 'package:bloc_mvu_app/sign_in/sign_in_view.dart';
-import 'package:bloc_mvu_app/sign_up/sign_up_view.dart';
-import 'package:bloc_mvu_app/user/user_view.dart';
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/mvu/view.dart';
+import 'package:samy_app/navigation/navigation_messages.dart';
+import 'package:samy_app/navigation/navigation_model.dart';
+import 'package:samy_app/navigation/navigation_update.dart';
+import 'package:samy_app/offers/offers_view.dart';
+import 'package:samy_app/offers_create/create_offer_view.dart';
+import 'package:samy_app/pages/menu/menu_view.dart';
+import 'package:samy_app/sign_in/sign_in_view.dart';
+import 'package:samy_app/sign_up/sign_up_view.dart';
+import 'package:samy_app/user/user_view.dart';
 import 'package:flutter/material.dart' hide Page, View;
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+final drawerKey = UniqueKey();
+final appBarKey = UniqueKey();
 
 class NavigationView extends View<NavigationMessage, NavigationModel, NavigationUpdate> {
   const NavigationView({Key? key}) : super(key: key);
@@ -21,9 +23,10 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
   Widget buildView(NavigationModel model) => Scaffold(
         key: scaffoldKey,
         appBar: AppBar(
+          key: appBarKey,
           title: Text(
-            model.page.name
-          ,),
+            prettyName(model.page),
+          ),
           backgroundColor: Colors.blue,
           actions: [
             IconButton(
@@ -36,7 +39,8 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
         body: Center(
           child: widgetFor(model.page),
         ),
-        endDrawer: const Drawer(
+        endDrawer: Drawer(
+          key: drawerKey,
           child: MenuView(),
         ),
       );

@@ -1,4 +1,4 @@
-import 'package:bloc_mvu_app/main.dart' as app;
+import 'package:samy_app/main.dart' as app;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
