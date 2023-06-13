@@ -4,6 +4,7 @@ import 'package:samy_app/navigation/navigation_messages.dart';
 import 'package:samy_app/navigation/navigation_model.dart';
 import 'package:samy_app/user/panel_view.dart';
 import 'package:flutter/material.dart' hide Page, View;
+import 'package:samy_app/util/utils.dart';
 
 Widget _button(Page page, Icon icon) => ListTile(
       onTap: () {
@@ -23,6 +24,7 @@ class MenuView extends ViewWithoutModel {
           // Remove padding
           padding: EdgeInsets.zero,
           children: [
+            exampleSvg,
             const UserPanelView(
 
             ),
