@@ -43,7 +43,7 @@ class UserUpdate extends Update<UserMessage, UserModel> {
   }
 
   Future<User> addUserToBackend(User user) async {
-    final url = Uri.parse('https://samy-backend-ybaxbalfwa-ey.a.run.app/api/sign-up');
+ //   final url = Uri.parse('https://samy-backend-ybaxbalfwa-ey.a.run.app/api/sign-up');
     final localUrl = Uri.parse('http://localhost:3000/sign-up');
 
     final response = await http.post(
