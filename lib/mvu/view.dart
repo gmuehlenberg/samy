@@ -1,5 +1,5 @@
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/mvu/update.dart';
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/mvu/update.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

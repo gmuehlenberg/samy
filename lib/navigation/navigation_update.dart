@@ -1,9 +1,9 @@
-import 'package:bloc_mvu_app/logging/logging.dart';
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/mvu/update.dart';
-import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
-import 'package:bloc_mvu_app/navigation/navigation_model.dart';
-import 'package:bloc_mvu_app/navigation/navigation_view.dart';
+import 'package:samy_app/logging/logging.dart';
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/mvu/update.dart';
+import 'package:samy_app/navigation/navigation_messages.dart';
+import 'package:samy_app/navigation/navigation_model.dart';
+import 'package:samy_app/navigation/navigation_view.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart' hide Page;
 

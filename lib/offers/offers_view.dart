@@ -1,9 +1,9 @@
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/mvu/view.dart';
-import 'package:bloc_mvu_app/offers/offers_message.dart';
-import 'package:bloc_mvu_app/offers/offers_model.dart';
-import 'package:bloc_mvu_app/offers/offers_update.dart';
-import 'package:flutter/material.dart';
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/mvu/view.dart';
+import 'package:samy_app/offers/offers_message.dart';
+import 'package:samy_app/offers/offers_model.dart';
+import 'package:samy_app/offers/offers_update.dart';
+import 'package:flutter/material.dart' hide View;
 import 'package:flutter_map/flutter_map.dart'; // Suitable for most situations
 import 'package:flutter_map/plugin_api.dart'; // Only import if required functionality is not exposed by 'flutter_map.dart'
 import 'package:latlong2/latlong.dart'; // Recommended for most use-cases

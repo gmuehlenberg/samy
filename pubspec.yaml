@@ -1,5 +1,5 @@
-name: bloc_mvu_app
-description: App to kickstart with BLoC & MVU in flutter
+name: samy_app
+description: Swap app for my youngster's place
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
@@ -15,9 +15,12 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.0
+  flutter_svg: 2.0.6
   flutter_map: ^1.1.1
   http: ^0.13.4
+  json_theme: ^5.0.2+6
   logger: ^1.1.0
+  google_fonts: ^4.0.4
 
 dev_dependencies:
   flutter_lints: ^1.0.0
@@ -26,12 +29,14 @@ dev_dependencies:
   integration_test:
     sdk: flutter
   msix: ^2.8.1
-  very_good_analysis: ^2.4.0
 
 flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/appainter_theme.json
+    - assets/logo.svg
+    - assets/background.jpg
 
 msix_config:
   display_name: BLoC+MVU Kickstarter App

@@ -1,6 +1,6 @@
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/user/user_model.dart';
-import 'package:bloc_mvu_app/user/user_update.dart';
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/user/user_model.dart';
+import 'package:samy_app/user/user_update.dart';
 
 abstract class UserMessage extends UpdateMessage {
   UserMessage() : super(routeTo: UserUpdate);

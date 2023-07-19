@@ -1,18 +1,26 @@
-import 'package:bloc_mvu_app/mvu/messaging.dart';
-import 'package:bloc_mvu_app/mvu/view.dart';
-import 'package:bloc_mvu_app/navigation/navigation_messages.dart';
-import 'package:bloc_mvu_app/navigation/navigation_model.dart';
-import 'package:bloc_mvu_app/sign_in/sign_in_message.dart';
-import 'package:bloc_mvu_app/sign_in/sign_in_model.dart';
-import 'package:bloc_mvu_app/sign_in/sign_in_update.dart';
-import 'package:flutter/material.dart' hide Page;
+import 'package:samy_app/mvu/messaging.dart';
+import 'package:samy_app/mvu/view.dart';
+import 'package:samy_app/navigation/navigation_messages.dart';
+import 'package:samy_app/navigation/navigation_model.dart';
+import 'package:samy_app/sign_in/sign_in_message.dart';
+import 'package:samy_app/sign_in/sign_in_model.dart';
+import 'package:samy_app/sign_in/sign_in_update.dart';
+import 'package:flutter/material.dart' hide Page, View;
+import 'package:google_fonts/google_fonts.dart';
 
 class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
   const SignInView({Key? key}) : super(key: key);
 
   @override
   Widget buildView(SignInModel model) => Scaffold(
-        body: SafeArea(
+        body: Container(
+            decoration: BoxDecoration(
+            image: DecorationImage(
+            image: AssetImage("assets/background.jpg"),
+             fit: BoxFit.cover,
+             ),
+             ),
+  child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20),
             child: CustomScrollView(
@@ -28,38 +36,21 @@ class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Container(
-                                width: 85,
-                                height: 85,
-                                color: Colors.grey[200],
-                                alignment: Alignment.center,
-                                child: Image.asset('assets/samy_small.png'),
-                                /*decoration: BoxDecoration(
-                                    color: Colors.blue[900],
-                                    borderRadius: BorderRadius.circular(30)),*/
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            'Willkommen bei SAMY',
+                            style: GoogleFonts.abel(fontSize: 35) // we need this line so flutter will load the font, feel free to fix
+                            ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            'Melde dich an, um das geeignete Tauschangebot zu finden.',
+                              style: GoogleFonts.abel(fontSize: 25)
                               ),
-                              const Icon(
-                                Icons.settings,
-                                color: Colors.grey,
-                                size: 40,
-                              )
-                            ],
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            'Welcome to SAMY',
-                            style: TextStyle(fontSize: 25, color: Colors.blue[900]),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            'Log in to find the perfect place for your youngster',
-                            style: TextStyle(color: Colors.grey[700], fontSize: 18),
-                          ),
                         ],
                       ),
                       const SizedBox(
@@ -71,7 +62,12 @@ class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
                           Column(
                             children: <Widget>[
                               const TextField(
-                                decoration: InputDecoration(labelText: 'Email', border: OutlineInputBorder()),
+                                decoration: InputDecoration(
+                                    labelText: 'E-Mail',
+                                    border: OutlineInputBorder(),
+                                    filled: true,
+                                    fillColor: Colors.white,
+                                ),
                               ),
                               const SizedBox(
                                 height: 10,
@@ -79,7 +75,9 @@ class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
                               TextField(
                                 obscureText: model.obscurePassword,
                                 decoration: InputDecoration(
-                                  labelText: 'Password',
+                                  filled: true,
+                                  fillColor: Colors.white,
+                                  labelText: 'Passwort',
                                   border: const OutlineInputBorder(),
                                   suffixIcon: IconButton(
                                     icon: Icon(model.obscurePassword ? Icons.visibility_off : Icons.visibility),
@@ -97,17 +95,15 @@ class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
                                 children: <Widget>[
                                   Row(
                                     children: <Widget>[
-                                      TextButton(
+                                      ElevatedButton(
                                         style: TextButton.styleFrom(
                                           padding: const EdgeInsets.all(15),
-                                          backgroundColor: Colors.blue[900],
                                         ),
                                         onPressed: () {
                                           dispatch(NavigateTo(Page.signUp));
                                         },
                                         child: const Text(
-                                          'Register now',
-                                          style: TextStyle(color: Colors.white, fontSize: 18),
+                                          'Noch kein Profil? Registriere dich!',
                                         ),
                                       ),
                                     ],
@@ -115,11 +111,10 @@ class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
                                   Container(
                                     height: 30,
                                     width: 1,
-                                    color: Colors.grey,
                                   ),
-                                  GestureDetector(
-                                    onTap: () {},
-                                    child: const Text('FORGOT PASSWORD?'),
+                                  ElevatedButton(
+                                    onPressed: () {},
+                                    child: const Text('Passwort vergessen?'),
                                   )
                                 ],
                               )
@@ -132,14 +127,13 @@ class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
                       ),
                       SizedBox(
                         width: double.infinity,
-                        child: TextButton(
+                        child: ElevatedButton(
                           style: TextButton.styleFrom(
                             padding: const EdgeInsets.all(15),
-                            backgroundColor: Colors.blue[900],
                           ),
                           onPressed: () {},
                           child: const Text(
-                            'Login',
+                            'Anmelden',
                             style: TextStyle(color: Colors.white, fontSize: 18),
                           ),
                         ),
@@ -151,5 +145,6 @@ class SignInView extends View<SignInMessage, SignInModel, SignInUpdate> {
             ),
           ),
         ),
-      );
+      )
+  );
 }

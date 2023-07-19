@@ -1,6 +1,6 @@
-import 'package:bloc_mvu_app/mvu/update.dart';
-import 'package:bloc_mvu_app/offers/offers_message.dart';
-import 'package:bloc_mvu_app/offers/offers_model.dart';
+import 'package:samy_app/mvu/update.dart';
+import 'package:samy_app/offers/offers_message.dart';
+import 'package:samy_app/offers/offers_model.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 

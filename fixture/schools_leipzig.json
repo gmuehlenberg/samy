@@ -1,0 +1,1949 @@
+[
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Anna-Magdalena-Bach-Schule",
+    "address": {
+      "street": "Manetstraße 8",
+      "postal code": "04109",
+      "city": "Leipzig"
+    },
+    "website": "www.amb-grundschule-leipzig.de",
+    "email": "a.m.bach-schule@t-online.de",
+    "phone": "0341 14062720",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "August-Hermann-Francke-Grundschule",
+    "address": {
+      "street": "Puschstraße 9 – Alte Messe, M 14",
+      "postal code": "04103",
+      "city": "Leipzig"
+    },
+    "website": "www.ahfgrundschule.de",
+    "email": "info@ahfgrundschule.de",
+    "phone": "0341 2535023",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "Evangelisches Schulzentrum",
+    "address": {
+      "street": "Schletterstraße 7",
+      "postal code": "04107",
+      "city": "Leipzig"
+    },
+    "website": "www.schulzentrum.de",
+    "email": "eva@schulzentrum.de",
+    "phone": "0341 994890",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "Forum thomanum",
+    "address": {
+      "street": "Sebastian-Bach-Straße 1",
+      "postal code": "04109",
+      "city": "Leipzig"
+    },
+    "website": "www.forum-thomanum.de",
+    "email": "grundschule@forum-thomanum.de",
+    "phone": "0341 97434421",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Lessingschule",
+    "address": {
+      "street": "Lessingstraße 25–27",
+      "postal code": "04109",
+      "city": "Leipzig"
+    },
+    "website": "www.lessing-grundschule.de",
+    "email": "info@lessing-grundschule.de",
+    "phone": "0341 30868890",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Pablo-Neruda-Schule",
+    "address": {
+      "street": "Tarostraße 6",
+      "postal code": "04103",
+      "city": "Leipzig"
+    },
+    "website": "www.pablo-neruda-schule.de",
+    "email": "grundschule@franz-leipzig.eu",
+    "phone": "0341 1245890",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "Rahn Education – Freie Grundschule \"Clara Schumann\"",
+    "address": {
+      "street": "Inselstraße 18",
+      "postal code": "04103",
+      "city": "Leipzig"
+    },
+    "website": "https://rahn.education",
+    "email": "grundschule-lpz@rahn.education",
+    "phone": "0341 39392110",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule 5 im Stadtbezirk Mitte",
+    "address": {
+      "street": "Eitingonstraße 5",
+      "postal code": "04105",
+      "city": "Leipzig"
+    },
+    "website": "www.schule5.de",
+    "email": "Schule5@t-online.de",
+    "phone": "0341 35058780",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule am Floßplatz",
+    "address": {
+      "street": "Floßplatz 12",
+      "postal code": "04107",
+      "city": "Leipzig"
+    },
+    "website": "www.schuleamflossplatz.de",
+    "email": "info@schuleamflossplatz.de",
+    "phone": "0341 9801640",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "66. Schule",
+    "address": {
+      "street": "Rosenowstraße 56",
+      "postal code": "04357",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule.gs66l/",
+    "email": "grundschule-66-leipzig@t-online.de",
+    "phone": "0341 60037790",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Astrid-Lindgren-Schule",
+    "address": {
+      "street": "Volksgartenstraße 16",
+      "postal code": "04347",
+      "city": "Leipzig"
+    },
+    "website": "www.astrid-lindgren-schule-leipzig.de",
+    "email": "info@grusalei.de",
+    "phone": "0341 23405821",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Clara-Wieck-Schule",
+    "address": {
+      "street": "Stöckelstraße 45",
+      "postal code": "04347",
+      "city": "Leipzig"
+    },
+    "website": "www.clara-wieck-schule.de",
+    "email": "sekretariat@clara-wieck-schule.de",
+    "phone": "0341 24586020",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule Portitz",
+    "address": {
+      "street": "Göbschelwitzer Weg 1",
+      "postal code": "04349",
+      "city": "Leipzig"
+    },
+    "website": "www.grundschule-portitz.de",
+    "email": "GSPortitz@t-online.de",
+    "phone": "0341 9216790",
+    "languages": ["Deutsch", "Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "24. Schule",
+    "address": {
+      "street": "Döllingstraße 25",
+      "postal code": "04328",
+      "city": "Leipzig"
+    },
+    "website": "www.24gs.de",
+    "email": "24.gs@web.de",
+    "phone": "0341 1493690",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "74. Schule",
+    "address": {
+      "street": "Stünzer Straße 16",
+      "postal code": "04318",
+      "city": "Leipzig"
+    },
+    "website": "www.74-grundschule-leipzig.de",
+    "email": "Leipzig-74.Grundschule@t-online.de",
+    "phone": "0341 6493031",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "August-Bebel-Schule",
+    "address": {
+      "street": "Husemannstraße 2",
+      "postal code": "04315",
+      "city": "Leipzig"
+    },
+    "website": "www.bebel-grundschule.de",
+    "email": "mail@bebel-grundschule.de",
+    "phone": "0341 68706332",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "yes",
+    "schoolname": "BIP Kreativitätsschule",
+    "address": {
+      "street": "Torgauer Straße 114",
+      "postal code": "04347",
+      "city": "Leipzig"
+    },
+    "website": "www.bipschulen.de",
+    "email": "kontakt@gsl.bipschulen.de",
+    "phone": "0341 2522748",
+    "languages": ["Englisch", "Französisch", "Spanisch", "Arabisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Brüder-Grimm-Schule",
+    "address": {
+      "street": "Goldsternstraße 23",
+      "postal code": "04329",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gslgrimm/brueder-grimm-grundschule-leipzig/",
+    "email": "bruedergrimmgrundschule@t-online.de",
+    "phone": "0341 25279880",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Christoph-Arnold-Schule",
+    "address": {
+      "street": "Gaswerksweg 1",
+      "postal code": "04319",
+      "city": "Leipzig"
+    },
+    "website": "www.christoph-arnold-schule.de",
+    "email": "christoph-arnold-gs@t-online.de",
+    "phone": "0341 6522080",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Ernst-Pinkert-Schule",
+    "address": {
+      "street": "Martinstraße 7",
+      "postal code": "04318",
+      "city": "Leipzig"
+    },
+    "website": "www.ernstpinkert-schule.de",
+    "email": "kontakt@ernstpinkert-schule.de",
+    "phone": "0341 6494241",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "yes",
+    "schoolname": "Grundschule Auguste",
+    "address": {
+      "street": "Grüne Gasse 21 b",
+      "postal code": "04318",
+      "city": "Leipzig"
+    },
+    "website": "www.schugel.de",
+    "email": "auguste@schugel.de",
+    "phone": "0341 6992291",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Hans-Christian-Andersen-Schule",
+    "address": {
+      "street": "Louis-Fürnberg-Straße 2",
+      "postal code": "04318",
+      "city": "Leipzig"
+    },
+    "website": "www.cms.sn.schule.de/gsandersen",
+    "email": "Gs-Andersen@t-online.de",
+    "phone": "0341 23418700",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Schule am Rabet",
+    "address": {
+      "street": "Eisenbahnstraße 50",
+      "postal code": "04315",
+      "city": "Leipzig"
+    },
+    "website": "www.schule-am-rabet.de",
+    "email": "schuleamrabet@t-online.de",
+    "phone": "0341 69922680",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Schule Mölkau",
+    "address": {
+      "street": "Schulstraße 8",
+      "postal code": "04316",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gsmoelkau/schule/aktuelles/",
+    "email": "gsmoelkau@t-online.de",
+    "phone": "0341 6870390",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Theodor-Körner-Schule",
+    "address": {
+      "street": "Schlehenweg 32",
+      "postal code": "04329",
+      "city": "Leipzig"
+    },
+    "website": "www.sn.schule.de/~gskoernl/",
+    "email": "th.-koerner-schule@t-online.de",
+    "phone": "0341 1245990",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Wilhelm-Wander-Schule",
+    "address": {
+      "street": "Schulze-Delitzsch-Straße 23",
+      "postal code": "04315",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gswiwa",
+    "email": "wi-wa-schule@t-online.de",
+    "phone": "0341 6001650",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Schule 31",
+    "address": {
+      "street": "Franzosenallee 21",
+      "postal code": "04289",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gs31l",
+    "email": "Leipzig-31.gs@t-online.de",
+    "phone": "0341 8691310",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Franz-Mehring-Schule",
+    "address": {
+      "street": "Gletschersteinstraße 9",
+      "postal code": "04299",
+      "city": "Leipzig"
+    },
+    "website": "http://cms.sn.schule.de/fms/",
+    "email": "franz-mehring-grundschule@t-online.de",
+    "phone": "0341 8604990",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Fritz-Baumgarten-Schule",
+    "address": {
+      "street": "Riebeckstraße 50",
+      "postal code": "04317",
+      "city": "Leipzig"
+    },
+    "website": "www.sn.schule.de/~gs77l",
+    "email": "fb-grundschule@t-online.de",
+    "phone": "0341 2308980",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Heinrich-Mann-Schule",
+    "address": {
+      "street": "Schwarzenbergweg 4",
+      "postal code": "04289",
+      "city": "Leipzig"
+    },
+    "website": "www.heinrich-mann-grundschule.de",
+    "email": "heinrich-mann-schule-leipzig@t-online.de",
+    "phone": "0341 86382190",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Schule Holzhausen",
+    "address": {
+      "street": "Stötteritzer Landstraße 21",
+      "postal code": "04288",
+      "city": "Leipzig"
+    },
+    "website": "www.sn.schule.de/~gsholzhausen/",
+    "email": "gsholzhausen@t-online.de",
+    "phone": "034297 73310",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Schule Liebertwolkwitz",
+    "address": {
+      "street": "Am Angerteich 2",
+      "postal code": "04288",
+      "city": "Leipzig"
+    },
+    "website": "www.gslw.com.de",
+    "email": "schule-liebertwolkwitz@gmx.de",
+    "phone": "034297 40110",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Wilhelm-Busch-Schule",
+    "address": {
+      "street": "Heinrichstraße 43",
+      "postal code": "04317",
+      "city": "Leipzig"
+    },
+    "website": "",
+    "email": "wilhelm-busch-schule-leipzig@t-online.de",
+    "phone": "0341 6493325",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "8. Schule",
+    "address": {
+      "street": "Wincklerstraße 3–5",
+      "postal code": "04279",
+      "city": "Leipzig"
+    },
+    "website": "www.grundschule-8-leipzig.de",
+    "email": "Leipzig-8.Grundschule@t-online.de",
+    "phone": "0341 3389546",
+    "languages": []
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "9. Schule",
+    "address": {
+      "street": "Gersterstraße 74",
+      "postal code": "04279",
+      "city": "Leipzig"
+    },
+    "website": "www.9-grundschule-leipzig.de",
+    "email": "sekretariat@9-grundschule.lernsax.de",
+    "phone": "0341 33387340",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "DPFA-Regenbogen-Grundschule Leipzig",
+    "address": {
+      "street": "Raschwitzer Straße 15",
+      "postal code": "04279",
+      "city": "Leipzig"
+    },
+    "website": "www.dpfa.de",
+    "email": "leipzig.grundschule@dpfa.de",
+    "phone": "0341 3363620",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Kurt-Masur-Schule",
+    "address": {
+      "street": "Scharnhorststraße 24",
+      "postal code": "04275",
+      "city": "Leipzig"
+    },
+    "website": "www.kurt-masur-schule-leipzig.de",
+    "email": "info@kurt-masur-schule.de",
+    "phone": "0341 22570780",
+    "languages": []
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Marienbrunner Schule",
+    "address": {
+      "street": "An der Märchenwiese 49",
+      "postal code": "04277",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gsmbsl/start/",
+    "email": "marienbrunner-grundschule@t-online.de",
+    "phone": "0341 86920511",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule an der Bernhard-Göring-Straße",
+    "address": {
+      "street": "Bernhard-Göring-Straße 107",
+      "postal code": "04275",
+      "city": "Leipzig"
+    },
+    "website": "",
+    "email": "bernhard.goering.grundschule@t-online.de",
+    "phone": "0341 22537200",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule Connewitz",
+    "address": {
+      "street": "Zwenkauer Straße 35",
+      "postal code": "04277",
+      "city": "Leipzig"
+    },
+    "website": "www.54grundschule.de",
+    "email": "Schule-connewitz@gmx.de",
+    "phone": "0341 22576550",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "Werner-Vogel-Schulzentrum",
+    "address": {
+      "street": "Hans-Marchwitza-Straße 12",
+      "postal code": "04279",
+      "city": "Leipzig"
+    },
+    "website": "www.diakonie-leipzig.de/schule",
+    "email": "werner-vogel-schule@diakonie-leipzig.de",
+    "phone": "0341 336380",
+    "languages": []
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "60. Schule",
+    "address": {
+      "street": "Seumestraße 93",
+      "postal code": "04249",
+      "city": "Leipzig"
+    },
+    "website": "www.sn.schule.de/~gs60l/",
+    "email": "gs-60@t-online.de",
+    "phone": "0341 4283062",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "120. Schule",
+    "address": {
+      "street": "Martin-Herrmann-Straße 1",
+      "postal code": "04249",
+      "city": "Leipzig"
+    },
+    "website": "www.grundschule-grosszschocher.de",
+    "email": "leipzig.120.gs@t-online.de",
+    "phone": "0341 4157170",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Erich-Zeigner-Schule",
+    "address": {
+      "street": "Erich-Zeigner-Allee 24–26",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "www.erich-zeigner-grundschule.de",
+    "email": "erich-zeigner-gs-leipzig@t-online.de",
+    "phone": "0341 87059390",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Fanny-Hensel-Schule",
+    "address": {
+      "street": "Weißenfelser Straße 13",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "www.gs-fanny-hensel.de",
+    "email": "fanny-hensel-schule-leipzig@t-online.de",
+    "phone": "0341 33756040",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "Leipzig International School",
+    "address": {
+      "street": "Könneritzstraße 47",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "www.lis.school",
+    "email": "admin@lis.school",
+    "phone": "0341 39377500",
+    "languages": ["Englisch", "Deutsch", "Französisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule am Adler",
+    "address": {
+      "street": "Antonienstraße 24",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "http://grundschule-am-adler.de",
+    "email": "gs-am-adler@t-online.de",
+    "phone": "0341 429912730",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule am Auwald",
+    "address": {
+      "street": "Rödelstraße 6",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "www.schule-am-auwald.de",
+    "email": "gs-auwald@t-online.de",
+    "phone": "0341 25347900",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "78. Schule",
+    "address": {
+      "street": "Binzer Straße 14",
+      "postal code": "04207",
+      "city": "Leipzig"
+    },
+    "website": "https://78gs.wordpress.com",
+    "email": "grundschule.78@t-online.de",
+    "phone": "0341 9454680",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "85. Schule",
+    "address": {
+      "street": "Stuttgarter Allee 3",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "https://85gs.wordpress.com",
+    "email": "leipzig-85.GS@t-online.de",
+    "phone": "0341 1245480",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "90. Schule",
+    "address": {
+      "street": "Garskestraße 21",
+      "postal code": "04205",
+      "city": "Leipzig"
+    },
+    "website": "",
+    "email": "GS-90@t-online.de",
+    "phone": "0341 4120080",
+    "languages": []
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "91. Schule",
+    "address": {
+      "street": "Uranusstraße 1",
+      "postal code": "04205",
+      "city": "Leipzig"
+    },
+    "website": "www.91schule-leipzig.de",
+    "email": "post@91-gs.l.sn.schule.de",
+    "phone": "0341 41297811",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "100. Schule",
+    "address": {
+      "street": "Miltitzer Allee 1",
+      "postal code": "04207",
+      "city": "Leipzig"
+    },
+    "website": "www.100schule-leipzig.de",
+    "email": "schule-100.gs@t-online.de",
+    "phone": "0341 944470",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "Bischöfliches Maria-Montessori-Schulzentrum",
+    "address": {
+      "street": "Alte Salzstraße 65",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "www.montessori-leipzig.de",
+    "email": "grundschule@montessori-leipzig.de",
+    "phone": "0341 4157070",
+    "languages": ["Englisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "Freie Schule Leipzig",
+    "address": {
+      "street": "Alte Salzstraße 67",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "www.freie-schule-leipzig.de",
+    "email": "kontakt@freie-schule-leipzig.de",
+    "phone": "0341 3013343",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Friedrich-Fröbel-Schule",
+    "address": {
+      "street": "Mannheimer Straße 128 C",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "https://froebel-schule-leipzig.de/",
+    "email": "froebelschule-leipzig@t-online.de",
+    "phone": "0341 42051890",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Joachim-Ringelnatz-Schule",
+    "address": {
+      "street": "Grünauer Allee 35",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "",
+    "email": "Ringelnatzschule-Leipzig@t-online.de",
+    "phone": "0341 4129290",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule Miltitz",
+    "address": {
+      "street": "Großmiltitzer Straße 4",
+      "postal code": "04205",
+      "city": "Leipzig"
+    },
+    "website": "",
+    "email": "schule-miltitz@tonline.de",
+    "phone": "0341 22561770",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "46. Schule",
+    "address": {
+      "street": "Saalfelder Straße 29",
+      "postal code": "04179",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gs46l",
+    "email": "Grundschule-46.Leipzig@t-online.de",
+    "phone": "0341 47842760",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "157. Schule",
+    "address": {
+      "street": "Hans-Driesch-Straße 41",
+      "postal code": "04179",
+      "city": "Leipzig"
+    },
+    "website": "www.157-grundschule-leipzig.de",
+    "email": "leutzscher-grundschule@t-online.de",
+    "phone": "0341 4536040",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule am Leutzscher Holz",
+    "address": {
+      "street": "Prießnitzstraße 19",
+      "postal code": "04179",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gs172l",
+    "email": "salh-gs@t-online.de",
+    "phone": "0341 45341911",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule Böhlitz-Ehrenberg",
+    "address": {
+      "street": "Heinrich-Heine-Straße 64",
+      "postal code": "04178",
+      "city": "Leipzig"
+    },
+    "website": "",
+    "email": "grundschule-boehlitz-ehrenberg@t-online.de",
+    "phone": "0341 4421780",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule Gundorf",
+    "address": {
+      "street": "Leipziger Straße 210",
+      "postal code": "04178",
+      "city": "Leipzig"
+    },
+    "website": "www.grundschule-gundorf.de",
+    "email": "grundschule.gundorf@t-online.de",
+    "phone": "0341 44242940",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule Rückmarsdorf",
+    "address": {
+      "street": "An der Friedenseiche 4",
+      "postal code": "04178",
+      "city": "Leipzig"
+    },
+    "website": "www.grundschule-rueckmarsdorf.de",
+    "email": "GS-Rueckmarsdorf@t-online.de",
+    "phone": "0341 2304080",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "39. Schule",
+    "address": {
+      "street": "Gustav-Kühn-Straße 1",
+      "postal code": "04159",
+      "city": "Leipzig"
+    },
+    "website": "http://cms.sn.schule.de/39gsl/schule",
+    "email": "Sl39.grundschuleleipzig@t-online.de",
+    "phone": "0341 90986580",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Alfred-Kästner-Schule",
+    "address": {
+      "street": "Gartenwinkel 30",
+      "postal code": "04158",
+      "city": "Leipzig"
+    },
+    "website": "www.alfred-kaestner-grundschule.de",
+    "email": "Alfred-Kaestner-GS-Leipzig@t-online.de",
+    "phone": "0341 2340950",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule am Auensee",
+    "address": {
+      "street": "Stahmelner Straße 1",
+      "postal code": "04159",
+      "city": "Leipzig"
+    },
+    "website": "www.schule-am-auensee.de",
+    "email": "auenseeschule@web.de",
+    "phone": "0341 4685858-0",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Schule Stahmeln",
+    "address": {
+      "street": "Stahmelner Höhe 1",
+      "postal code": "04159",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gsstahmeln",
+    "email": "Grundschule-Stahmeln@t-online.de",
+    "phone": "0341 4616965",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Wilhelm-Hauff-Schule",
+    "address": {
+      "street": "Diderotstraße 37",
+      "postal code": "04159",
+      "city": "Leipzig"
+    },
+    "website": "www.cms.sn.schule.de/hauffgs",
+    "email": "W.-Hauff-Grundschule@t-online.de",
+    "phone": "0341 9083440",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "33. Schule",
+    "address": {
+      "street": "Anhalter Straße 1",
+      "postal_code": "04129",
+      "city": "Leipzig"
+    },
+    "website": "",
+    "email": "grundschule33@t-online.de",
+    "phone": "0341 90986590",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Adam-Friedrich-Oeser-Schule",
+    "address": {
+      "street": "Geibelstraße 74",
+      "postal_code": "04129",
+      "city": "Leipzig"
+    },
+    "website": "www.oeserschule-leipzig.de",
+    "email": "GSOeser@t-online.de",
+    "phone": "0341 91962911",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "yes",
+    "schoolname": "Aktive Schule Leipzig",
+    "address": {
+      "street": "Eisenacher Straße 40 a",
+      "postal_code": "04157",
+      "city": "Leipzig"
+    },
+    "website": "www.aktive-schule-leipzig.de",
+    "email": "kontakt@aktive-schule-leipzig",
+    "phone": "0341 24066555",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Carl-von-Linné-Schule",
+    "address": {
+      "street": "Delitzscher Straße 110",
+      "postal_code": "04129",
+      "city": "Leipzig"
+    },
+    "website": "www.linne-schule.de",
+    "email": "linneschule@t-online.de",
+    "phone": "0341 9047720",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Grundschule",
+    "privateschool": "no",
+    "schoolname": "Erich Kästner-Schule",
+    "address": {
+      "street": "Erfurter Straße 9",
+      "postal_code": "04155",
+      "city": "Leipzig"
+    },
+    "website": "www.kaestnerschule.de",
+    "email": "hallo@kaestnerschule.de",
+    "phone": "0341 586145011",
+    "languages": ["Englisch"]
+  },
+  {
+      "schoolname": "Geschwister-Scholl-Schule",
+      "schooltype": "Grundschule",
+      "privateschool": "no",
+      "address": {
+        "street": "Elsbethstraße 1",
+        "postalcode": "04155",
+        "city": "Leipzig"
+      },
+      "website": "https://geschwister-scholl-grundschule.jimdo.com",
+      "email": "geschwister-scholl-gs-leipzig@t-online.de",
+      "phone": "0341 1495990",
+      "languages": ["Englisch"]
+    },
+    {
+      "schoolname": "Hans-Kroch-Schule",
+      "schooltype": "Grundschule",
+      "privateschool": "no",
+      "address": {
+        "street": "Jörgen-Schmidtchen-Weg 8",
+        "postalcode": "04157",
+        "city": "Leipzig"
+      },
+      "website": "www.hans-kroch-schule.de",
+      "email": "hans-kroch-gs-leipzig@t-online.de",
+      "phone": "0341 91024730",
+      "languages": ["Englisch"]
+    },
+    {
+      "schoolname": "Karl-Liebknecht-Schule",
+      "schooltype": "Grundschule",
+      "privateschool": "no",
+      "address": {
+        "street": "Heinrich-Mann-Straße 1",
+        "postalcode": "04157",
+        "city": "Leipzig"
+      },
+      "website": "www.karl-liebknecht-schule.de",
+      "email": "karli-gs@t-online.de",
+      "phone": "0341 9098790",
+      "languages": ["Englisch"]
+    },
+    {
+      "schoolname": "Schule Seehausen",
+      "schooltype": "Grundschule",
+      "privateschool": "no",
+      "address": {
+        "street": "Seehausener Allee 17",
+        "postalcode": "04356",
+        "city": "Leipzig"
+      },
+      "website": "https://gs-seehausen.de",
+      "email": "schule-seehausen@t-online.de",
+      "phone": "0341 5211390",
+      "languages": ["Englisch"]
+    },
+    {
+      "schoolname": "Schule Wiederitzsch",
+      "schooltype": "Grundschule",
+      "privateschool": "no",
+      "address": {
+        "street": "Zur Schule 11",
+        "postalcode": "04158",
+        "city": "Leipzig"
+      },
+      "website": "www.grundschule-wiederitzsch.de",
+      "email": "grundschule-wiederitzsch@t-online.de",
+      "phone": "0341 5201500",
+      "languages": ["Englisch"]
+    },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "94. Schule",
+    "address": {
+      "street": "Max-Planck-Straße 1–3",
+      "postal code": "04105",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/94osl",
+    "email": "94mittelschule-leipzig@web.de",
+    "phone": "0341 9103630",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Evangelisches Schulzentrum",
+    "address": {
+      "street": "Schletterstraße 7",
+      "postal code": "04107",
+      "city": "Leipzig"
+    },
+    "website": "www.schulzentrum.de",
+    "email": "eva@schulzentrum.de",
+    "phone": "0341 994890",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Freie Oberschule Rahn Education",
+    "address": {
+      "street": "Salomonstraße 10",
+      "postal code": "04103",
+      "city": "Leipzig"
+    },
+    "website": "https://rahn.education",
+    "email": "oberschule-lpz@rahn.education.de",
+    "phone": "0341 39392310",
+    "languages": ["Englisch", "Spanisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Georg-Schumann-Schule",
+    "address": {
+      "street": "Glockenstraße 6",
+      "postal code": "04103",
+      "city": "Leipzig"
+    },
+    "website": "www.georg-schumann-schule.de",
+    "email": "gsschule@gmx.de",
+    "phone": "0341 2617770",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "yes",
+    "schoolname": "Petrischule",
+    "address": {
+      "street": "Paul-Gruner-Straße 50",
+      "postal code": "04107",
+      "city": "Leipzig"
+    },
+    "website": "www.petrischule-leipzig.de",
+    "email": "Petrischule.Leipzig@t-online.de",
+    "phone": "0341 9104600",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "SportOberschule Leipzig",
+    "address": {
+      "street": "Max-Planck-Straße 53–55",
+      "postal code": "04105",
+      "city": "Leipzig"
+    },
+    "website": "https://sportoberschule-le.de",
+    "email": "kontakt@sportoberschule-le.de",
+    "phone": "0341 984230",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "yes",
+    "schoolname": "TÜV Rheinland Oberschule Leipzig",
+    "address": {
+      "street": "Paul-Gruner-Straße 59",
+      "postal code": "04107",
+      "city": "Leipzig"
+    },
+    "website": "www.tuv.com/schule-leipzig",
+    "email": "schule-leipzig@de.tuv.com",
+    "phone": "0341 2251378",
+    "languages": ["Englisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "20. Schule",
+    "address": {
+      "street": "Bästleinstraße 14",
+      "postal code": "04347",
+      "city": "Leipzig"
+    },
+    "website": "www.20schule-ms.de",
+    "email": "20.schule-MS@web.de",
+    "phone": "0341 2308990",
+    "languages": ["Englisch", "Französisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Christian-Gottlob-Frege-Schule",
+    "address": {
+      "street": "Lidicestraße 12",
+      "postal code": "04349",
+      "city": "Leipzig"
+    },
+    "website": "www.frege-oberschule.de",
+    "email": "frege-oberschule-sekretariat@t-online.de",
+    "phone": "0341 9216680",
+    "languages": ["Englisch", "Russisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule Ihmelsstraße",
+    "address": {
+      "street": "Interim: Löbauer Straße 46",
+      "postal code": "04347",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/oslihmel",
+    "email": "ihmelsstrasse@gmail.com",
+    "phone": "0341 2346903-0",
+    "languages": ["Englisch", "Französisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "16. Schule",
+    "address": {
+      "street": "Konradstraße 67",
+      "postal code": "04315",
+      "city": "Leipzig"
+    },
+    "website": "www.ms16.de",
+    "email": "post@os16.de",
+    "phone": "0341 6865780",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule Mölkau",
+    "address": {
+      "street": "Schulstraße 6",
+      "postal code": "04316",
+      "city": "Leipzig"
+    },
+    "website": "http://www.oberschule-moelkau.de/index.html",
+    "email": "sekretariat@oberschule-moelkau.de",
+    "phone": "0341 6522190",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule Paunsdorf",
+    "address": {
+      "street": "Zum Wäldchen 4",
+      "postal code": "04329",
+      "city": "Leipzig"
+    },
+    "website": "www.oberschule-leipzig-paunsdorf.de",
+    "email": "oberschule.leipzig-paunsdorf@t-online.de",
+    "phone": "0341 2711990",
+    "languages": ["Englisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "125. Schule",
+    "address": {
+      "street": "Heinrichstraße 45",
+      "postal code": "04317",
+      "city": "Leipzig"
+    },
+    "website": "www.125.oberschule.de",
+    "email": "info@125-mittelschule-leipzig.de",
+    "phone": "0341 649330",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Geschwister-Scholl-Schule Liebertwolkwitz",
+    "address": {
+      "street": "Am Angerteich 2",
+      "postal code": "04288",
+      "city": "Leipzig"
+    },
+    "website": "www.oberschule-liebertwolkwitz.de",
+    "email": "Mittelschule-Liebertwolkwitz@t-online.de",
+    "phone": "034297 1402900",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule am Weißeplatz",
+    "address": {
+      "street": "Ferdinand-Jost-Straße 33",
+      "postal code": "04299",
+      "city": "Leipzig"
+    },
+    "website": "www.schule-am-weißeplatz.de",
+    "email": "oberschule-am-weisseplatz@t-online.de",
+    "phone": "0341 24167750",
+    "languages": ["Französisch", "Latein"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Apollonia-von-Wiedebach-Schule",
+    "address": {
+      "street": "Arno-Nitzsche-Straße 7",
+      "postal code": "04277",
+      "city": "Leipzig"
+    },
+    "website": "www.wiedebachschule-leipzig.de",
+    "email": "wiedebachschule-leipzig@t-online.de",
+    "phone": "0341 30824690",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Lene-Voigt-Schule",
+    "address": {
+      "street": "Willi-Bredel-Straße 11",
+      "postal code": "04279",
+      "city": "Leipzig"
+    },
+    "website": "www.lene-voigt-schule-leipzig.de",
+    "email": "aussenstelle@lene-voigt-schule-leipzig.de",
+    "phone": "0341 3338690",
+    "languages": ["Französisch", "Russisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule Höltystraße | Außenstelle der Lene-Voigt-Schule",
+    "address": {
+      "street": "Willi-Bredel-Straße 15",
+      "postal code": "04279",
+      "city": "Leipzig"
+    },
+    "website": "www.lene-voigt-schule.de",
+    "email": "aussenstelle@lene-voigt-schule.de",
+    "phone": "0341 336440",
+    "languages": []
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "56. Schule",
+    "address": {
+      "street": "Dieskaustraße 213",
+      "postal code": "04249",
+      "city": "Leipzig"
+    },
+    "website": "www.56-oberschule-leipzig.de",
+    "email": "sekretariat@56-oberschule-leipzig.de",
+    "phone": "0341 4270980",
+    "languages": ["Englisch", "Russisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule | Schule in freier Trägerschaft",
+    "privateschool": "yes",
+    "schoolname": "Leipzig International School gGmbH",
+    "address": {
+      "street": "Könneritzstraße 47",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "www.lis.school",
+    "email": "admin@lis.school",
+    "phone": "0341 39377500",
+    "languages": ["Deutsch", "Französisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule am Adler",
+    "address": {
+      "street": "Antonienstraße 24",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "www.schuleamadler.de",
+    "email": "os-leipzig@schuleamadler.de",
+    "phone": "0341 415470",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule Ratzelstraße",
+    "address": {
+      "street": "Ratzelstraße 26",
+      "postal code": "04207",
+      "city": "Leipzig"
+    },
+    "website": "cms.sachsen.schule/oslratzel",
+    "email": "ratzel-os@t-online.de",
+    "phone": "0341 4129285-0",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "84. Schule",
+    "address": {
+      "street": "Stuttgarter Allee 5",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "www.84-ms-leipzig.de",
+    "email": "Leipzig-84.os@t-online.de",
+    "phone": "034297 9103640",
+    "languages": ["Englisch"]
+  },
+  {
+    "schooltype": "Oberschule | Schule in freier Trägerschaft",
+    "privateschool": "yes",
+    "schoolname": "Bischöfliches Maria-Montessori-Schulzentrum",
+    "address": {
+      "street": "Alte Salzstraße 61–65",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "www.montessori-leipzig.de",
+    "email": "oberschule@montessori-leipzig.de",
+    "phone": "0341 4157060",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule | Schule in freier Trägerschaft",
+    "privateschool": "yes",
+    "schoolname": "Freie Schule Leipzig",
+    "address": {
+      "street": "Alte Salzstraße 67",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "www.freie-schule-leipzig.de",
+    "email": "kontakt@freie-schule-leipzig.de",
+    "phone": "0341 3013343",
+    "languages": []
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Heinrich-Pestalozzi-Schule",
+    "address": {
+      "street": "Pestalozzistraße 39–41",
+      "postal code": "04178",
+      "city": "Leipzig"
+    },
+    "website": "www.heinrich-pestalozzi-schule.de",
+    "email": "mshpestalozzi@t-online.de",
+    "phone": "0341 4423090",
+    "languages": ["Englisch", "Russisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Helmholtzschule",
+    "address": {
+      "street": "Helmholtzstraße 6",
+      "postal code": "04177",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/oslhelmh",
+    "email": "oshelmholtz@t-online.de",
+    "phone": "0341 4867710",
+    "languages": ["Englisch", "Französisch", "Russisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule Georg-Schwarz-Straße",
+    "address": {
+      "street": "Georg-Schwarz-Straße 113",
+      "postal code": "04179",
+      "city": "Leipzig"
+    },
+    "website": "www.schule-georg-schwarz-strasse.de",
+    "email": "schule-georg-schwarz-strasse@t-online.de",
+    "phone": "0341 44234890",
+    "languages": ["Englisch", "Russisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Paul-Robeson-Schule",
+    "address": {
+      "street": "Jungmannstraße 5",
+      "postal code": "04159",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/msrobeson",
+    "email": "pr-oberschule@t-online.de",
+    "phone": "0341 6522060",
+    "languages": ["Englisch", "Französisch", "Russisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "35. Schule",
+    "address": {
+      "street": "Virchowstraße 4/6",
+      "postal code": "04157",
+      "city": "Leipzig"
+    },
+    "website": "www.35mittelschule-leipzig.de",
+    "email": "35.Mittelschule-Leipzig@gmx.de",
+    "phone": "0341 904930",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "68. Schule",
+    "address": {
+      "street": "Breitenfelder Straße 19",
+      "postal code": "04155",
+      "city": "Leipzig"
+    },
+    "website": "www.mittelschule-moeckern.de",
+    "email": "Leipzig-ms68@t-online.de",
+    "phone": "0341 2304090",
+    "languages": ["Englisch", "Russisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "yes",
+    "schoolname": "Aktive Schule Leipzig – Freie Oberschule",
+    "address": {
+      "street": "Mottelerstraße 4",
+      "postal code": "04155",
+      "city": "Leipzig"
+    },
+    "website": "www.aktive-schule-leipzig.de/oberschule",
+    "email": "oberschule@aktive-schule-leipzig.de",
+    "phone": "0341 24066595",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "yes",
+    "schoolname": "Freie Oberschule Gohlis",
+    "address": {
+      "street": "Lützowstraße 8",
+      "postal code": "04155",
+      "city": "Leipzig"
+    },
+    "website": "www.schugel.de",
+    "email": "fog@schugel.de",
+    "phone": "0341 5647880",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule Diderotstraße",
+    "address": {
+      "street": "Interim: Anhalter Straße 1",
+      "postal code": "04129",
+      "city": "Leipzig"
+    },
+    "website": null,
+    "email": "dos-leipzig@outlook.de",
+    "phone": "0341 909865940",
+    "languages": ["Englisch", "Französisch"]
+  },
+  {
+    "schooltype": "Oberschule",
+    "privateschool": "no",
+    "schoolname": "Schule Wiederitzsch",
+    "address": {
+      "street": "Zur Schule 11",
+      "postal code": "04158",
+      "city": "Leipzig"
+    },
+    "website": "www.oberschule-wiederitzsch.de",
+    "email": "oberschule-wiederitzsch@web.de",
+    "phone": "0341 5201500",
+    "languages": ["Englisch", "Französisch", "Russisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Anton-Philipp-Reclam-Schule",
+    "address": {
+      "street": "Tarostraße 4",
+      "postal code": "04103",
+      "city": "Leipzig"
+    },
+    "website": "www.reclamgymnasium.de",
+    "email": "reclamgymnasium@franz-leipzig.eu",
+    "phone": "0341 2245790",
+    "languages": ["Englisch", "Französisch", "Spanisch", "Italienisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "yes",
+    "schoolname": "Evangelisches Schulzentrum",
+    "address": {
+      "street": "Schletterstraße 7",
+      "postal code": "04107",
+      "city": "Leipzig"
+    },
+    "website": "www.schulzentrum.de",
+    "email": "eva@schulzentrum.de",
+    "phone": "0341 994890",
+    "languages": ["Englisch", "Französisch", "Latein"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Gerda-Taro-Schule",
+    "address": {
+      "street": "Telemannstraße 9",
+      "postal code": "04103",
+      "city": "Leipzig"
+    },
+    "website": "http://cms.sachsen.schule/gymtele/start/",
+    "email": "sekretariat@gts.lernsax.de",
+    "phone": "0341 14909800",
+    "languages": ["Englisch", "Französisch", "Spanisch", "Italienisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Leibnizschule",
+    "address": {
+      "street": "Nordplatz 13",
+      "postal code": "04105",
+      "city": "Leipzig"
+    },
+    "website": "www.leibniz-gymnasium-leipzig.de",
+    "email": "sekretariat@leibniz-gymnasium-leipzig.de",
+    "phone": "0341 5861990",
+    "languages": ["Englisch", "Französisch", "Russisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "yes",
+    "schoolname": "Rahn Education – Musikalisch-Sportliches Gymnasium",
+    "address": {
+      "street": "Salomonstraße 10",
+      "postal code": "04103",
+      "city": "Leipzig"
+    },
+    "website": "www.rahn.education",
+    "email": "gymnasium-lpz@rahn.education",
+    "phone": "0341 39392510",
+    "languages": ["Englisch", "Französisch", "Spanisch", "Latein"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Thomasschule",
+    "address": {
+      "street": "Hillerstraße 7",
+      "postal code": "04109",
+      "city": "Leipzig"
+    },
+    "website": "www.thomasschule.de",
+    "email": "sekretariat@thomasschule.de",
+    "phone": "0341 1246830",
+    "languages": ["Englisch", "Latein", "Französisch", "Italienisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Friedrich-Arnold-Brockhaus-Schule",
+    "address": {
+      "street": "Kieler Straße 72b",
+      "postal code": "04357",
+      "city": "Leipzig"
+    },
+    "website": "www.brockhaus-gymnasium.de",
+    "email": "kontakt@brockhaus-gymnasium.de",
+    "phone": "0341 600370",
+    "languages": ["Englisch", "Französisch", "Russisch", "Latein"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Goethe-Gymnasium",
+    "address": {
+      "street": "Gorkistraße 25",
+      "postal code": "04347",
+      "city": "Leipzig"
+    },
+    "website": "www.goethegym-leipzig.de",
+    "email": "sekretariat@goethegym-leipzg.de",
+    "phone": "0341 2348130-0",
+    "languages": ["Englisch", "Französisch", "Spanisch", "Russisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "yes",
+    "schoolname": "IP Kreativitätsgymnasium",
+    "address": {
+      "street": "Torgauer Straße 114",
+      "postal code": "04347",
+      "city": "Leipzig"
+    },
+    "website": "www.bipschulen.de",
+    "email": "kontakt@gyl.bipschulen.de",
+    "phone": "0341 2348489",
+    "languages": ["Englisch", "Französisch", "Spanisch", "Latein"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Gustav-Hertz-Schule",
+    "address": {
+      "street": "Dachsstraße 5",
+      "postal code": "04329",
+      "city": "Leipzig"
+    },
+    "website": "www.gustav-hertz-gymnasium.de",
+    "email": "GHGsekretariat@gmx.de",
+    "phone": "0341 2502510",
+    "languages": ["Englisch", "Französisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Gymnasium Engelsdorf",
+    "address": {
+      "street": "Arthur-Winkler-Straße 6",
+      "postal code": "04319",
+      "city": "Leipzig"
+    },
+    "website": "www.gymnasiumengelsdorf.de",
+    "email": "schulleiter@gymnasiumengelsdorf.de",
+    "phone": "0341 65224330",
+    "languages": ["Englisch", "Französisch", "Latein", "Spanisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Humboldt-Schule",
+    "address": {
+      "street": "Möbiusstraße 8",
+      "postal code": "04317",
+      "city": "Leipzig"
+    },
+    "website": "www.humboldt-leipzig.de",
+    "email": "schule@humboldt-leipzig.de",
+    "phone": "0341 2178560",
+    "languages": ["Englisch", "Französisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Neue Nikolaischule",
+    "address": {
+      "street": "Schönbachstraße 17",
+      "postal code": "04299",
+      "city": "Leipzig"
+    },
+    "website": "www.nikolaigymnasium.de",
+    "email": "Nikolaigymnasium@t-online.de",
+    "phone": "0341 8603890",
+    "languages": ["Englisch", "Französisch", "Russisch", "Latein"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Immanuel-Kant-Schule",
+    "address": {
+      "street": "Scharnhorststraße 15",
+      "postal code": "04275",
+      "city": "Leipzig"
+    },
+    "website": "www.kantgym-leipzig.de",
+    "email": "kant-gymnasium@t-online.de",
+    "phone": "0341 303480",
+    "languages": ["Englisch", "Französisch", "Russisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Louise-Otto-Peters-Schule",
+    "address": {
+      "street": "Bornaische Straße 104",
+      "postal code": "04277",
+      "city": "Leipzig"
+    },
+    "website": "https://cms.sachsen.schule/gymlops/home",
+    "email": "sekretariat@lops.lernsax.de",
+    "phone": "0341 308281622",
+    "languages": ["Englisch", "Latein", "Französisch", "Italienisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Wilhelm-Ostwald-Schule",
+    "address": {
+      "street": "Willi-Bredel-Straße 15",
+      "postal code": "04279",
+      "city": "Leipzig"
+    },
+    "website": "www.ostwaldgymnasium.de",
+    "email": "sekretariat@ostwaldportal.de",
+    "phone": "0341 336440",
+    "languages": ["Englisch", "Französisch", "Latein"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Johannes-Kepler-Schule",
+    "address": {
+      "street": "Dieskaustraße 76",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "https://www.jkg-leipzig.de",
+    "email": "jkg-leipzig@gmx.de",
+    "phone": "0341 4129231",
+    "languages": ["Englisch", "Französisch", "Latein", "Russisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "yes",
+    "schoolname": "Leipzig International School gGmbH",
+    "address": {
+      "street": "Könneritzstraße 47",
+      "postal code": "04229",
+      "city": "Leipzig"
+    },
+    "website": "www.lis.school",
+    "email": "admin@lis.school",
+    "phone": "0341 39377500",
+    "languages": ["Deutsch", "Englisch", "Französisch", "Spanisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "yes",
+    "schoolname": "Bischöfliches Maria-Montessori-Schulzentrum",
+    "address": {
+      "street": "Alte Salzstraße 61–65",
+      "postal code": "04209",
+      "city": "Leipzig"
+    },
+    "website": "www.montessori-leipzig.de",
+    "email": "gymnasium@montessori-leipzig.de",
+    "phone": "0341 4157060",
+    "languages": ["Englisch", "Französisch", "Latein", "Spanisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "Schule in freier Trägerschaft": "no",
+    "schoolname": "Max-Klinger-Schule",
+    "address": {
+      "street": "Miltitzer Weg 2–4",
+      "postal code": "04205",
+      "city": "Leipzig"
+    },
+    "website": "www.klingerschule.de",
+    "email": "verwaltung@klingerschule.de",
+    "phone": "0341 910360",
+    "languages": []
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Robert-Schumann-Schule",
+    "address": {
+      "street": "Demmeringstraße 84",
+      "postal code": "04177",
+      "city": "Leipzig"
+    },
+    "website": "www.robert-schumann-gymnasium-leipzig.de",
+    "email": "sekretariat@rsg-leipzig.de",
+    "phone": "0341 486450",
+    "languages": ["Englisch", "Latein", "Französisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Schule Karl-Heine-Straße",
+    "address": {
+      "street": "Interim: Uhlandstraße 28",
+      "postal code": "04177",
+      "city": "Leipzig"
+    },
+    "website": "www.schule-khstr-leipzig.de",
+    "email": "sekretariatgykhstr@rsg-leipzig.de",
+    "phone": "0341 4423384-0",
+    "languages": ["Englisch", "Spanisch", "Latein", "Französisch"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Werner-Heisenberg-Schule",
+    "address": {
+      "street": "Renftstraße 3",
+      "postal code": "04159",
+      "city": "Leipzig"
+    },
+    "website": "www.whs-leipzig.de",
+    "email": "gyheis@web.de",
+    "phone": "0341 9098770",
+    "languages": ["Englisch", "Russisch", "Französisch", "Latein"]
+  },
+  {
+    "schooltype": "Gymnasium",
+    "privateschool": "no",
+    "schoolname": "Friedrich-Schiller-Schule",
+    "address": {
+      "street": "Elsbethstraße 2/4",
+      "postal code": "04155",
+      "city": "Leipzig"
+    },
+    "website": "www.fschillerg.de",
+    "email": "info@fschillerg.de",
+    "phone": "0341 5830290",
+    "languages": ["Englisch", "Latein", "Französisch", "Russisch"]
+  }
+  ]
+  
