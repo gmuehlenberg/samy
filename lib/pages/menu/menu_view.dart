@@ -24,7 +24,7 @@ class MenuView extends ViewWithoutModel {
           // Remove padding
           padding: EdgeInsets.zero,
           children: [
-            exampleSvg,
+            samyLogo,
             const UserPanelView(
 
             ),
