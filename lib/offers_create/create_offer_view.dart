@@ -19,8 +19,10 @@ class CreateOfferView
         padding: const EdgeInsets.all(30),
         children: [
           Text(
-            'Create offer',
-            style: TextStyle(color: Colors.grey[700], fontSize: 18),
+            'Erstelle ein Tauschgesuch, um den perfekten Schulplatz zu finden.', style: TextStyle(fontSize: 20),
+          ),
+          Text(
+            'Gib dazu die derzeitige Schule, die Schulklasse und das voraussichtliche Datum des Schulwechsels an.', style: TextStyle(fontSize: 16),
           ),
           CreateOffersForm(),
         ],
@@ -122,13 +124,9 @@ class CreateOffersFormState extends State<CreateOffersForm> {
           ),
           SizedBox(
             width: double.infinity,
-            child: TextButton(
-              style: TextButton.styleFrom(
-                backgroundColor: Colors.blue[900],
-              ),
+            child: ElevatedButton(
               child: const Text(
                 'Tauschgesuch erstellen',
-                style: TextStyle(color: Colors.white, fontSize: 18),
               ),
               onPressed: () {
                 dispatch(

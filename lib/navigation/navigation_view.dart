@@ -27,7 +27,6 @@ class NavigationView extends View<NavigationMessage, NavigationModel, Navigation
           title: Text(
             prettyName(model.page),
           ),
-          backgroundColor: Colors.blue,
           actions: [
             IconButton(
               icon: const Icon(Icons.table_rows),

@@ -1,6 +1,6 @@
 import 'package:flutter_svg/svg.dart';
 
-final exampleSvg = SvgPicture.asset(
-  'assets/example.svg',
-  semanticsLabel: 'Beispiel',
+final samyLogo = SvgPicture.asset(
+  'assets/logo.svg',
+  semanticsLabel: 'Logo',
 );
